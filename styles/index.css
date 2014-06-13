@@ -17,9 +17,6 @@ a {
   text-decoration: none;
   color: #666; }
 
-a:hover {
-  color: #346eb4; }
-
 i, em, strong, span, address {
   font-style: normal; }
 
@@ -73,42 +70,6 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
 .cf {
   zoom: 1; }
 
-.f12 {
-  font-size: 12px; }
-
-.f14 {
-  font-size: 14px; }
-
-.f16 {
-  font-size: 16px; }
-
-.f18 {
-  font-size: 18px; }
-
-.f20 {
-  font-size: 20px; }
-
-.lh20 {
-  line-height: 20px; }
-
-.lh22 {
-  line-height: 22px; }
-
-.lh24 {
-  line-height: 24px; }
-
-.lh26 {
-  line-height: 26px; }
-
-.lh28 {
-  line-height: 28px; }
-
-.fb {
-  font-weight: bold; }
-
-.fn {
-  font-weight: normal; }
-
 .bk, .bk3, .bk6, .bk8, .bk10, .bk15, .bk20, .bk30 {
   clear: both;
   font-size: 1px;
@@ -142,6 +103,9 @@ a {
   -ms-transition: all .3s ease-in-out 0s;
   -o-transition: all .3s ease-in-out 0s;
   transition: all .3s ease-in-out 0s; }
+
+a:hover {
+  color: #346eb4; }
 
 /*header*/
 #header {
