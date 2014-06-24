@@ -155,7 +155,7 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
     border-top: 6px solid #e74c3c;
     border-right: 0 none; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1201px) {
   .head-nav li {
     width: 64.8px; }
     .head-nav li:nth-child(1):hover ~ .head-nav-mv {
@@ -184,7 +184,7 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
       margin-top: 36px;
       width: 186px;
       height: 38px; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .head-nav li {
     padding: 0 11.4px; }
     .head-nav li:nth-child(1):hover ~ .head-nav-mv {
@@ -213,12 +213,89 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
       margin-top: 29px;
       width: 149px;
       height: 30px; } }
-@media screen and (max-width: 1024px) and (min-width: 780px) {
-  #header h1 {
-    display: none; } }
-@media screen and (max-width: 1024px) {
-  #header h1 {
-    display: none; } }
+@media screen and (max-width: 861px) and (min-width: 781px) {
+  .head-nav li {
+    padding: 0 7.6px; }
+    .head-nav li:nth-child(1):hover ~ .head-nav-mv {
+      left: 0; }
+    .head-nav li:nth-child(2):hover ~ .head-nav-mv {
+      left: 81.2px; }
+    .head-nav li:nth-child(3):hover ~ .head-nav-mv {
+      left: 162.4px; }
+    .head-nav li:nth-child(4):hover ~ .head-nav-mv {
+      left: 243.6px; }
+    .head-nav li:nth-child(5):hover ~ .head-nav-mv {
+      left: 324.8px; }
+    .head-nav li:nth-child(6):hover ~ .head-nav-mv {
+      left: 406px; }
+    .head-nav li:nth-child(7):hover ~ .head-nav-mv {
+      left: 487.2px;
+      border-right: 0 none; }
+    .head-nav li a {
+      font-size: 16px; }
+
+  #header {
+    height: 68px; }
+    #header nav {
+      padding-top: 29px; }
+    #header h1 {
+      margin-top: 24px;
+      width: 120px;
+      height: 24px; } }
+@media screen and (min-width: 641px) and (max-width: 781px) {
+  .head-nav li {
+    padding: 0 7.6px; }
+    .head-nav li:nth-child(1):hover ~ .head-nav-mv {
+      left: 0; }
+    .head-nav li:nth-child(2):hover ~ .head-nav-mv {
+      left: 81.2px; }
+    .head-nav li:nth-child(3):hover ~ .head-nav-mv {
+      left: 162.4px; }
+    .head-nav li:nth-child(4):hover ~ .head-nav-mv {
+      left: 243.6px; }
+    .head-nav li:nth-child(5):hover ~ .head-nav-mv {
+      left: 324.8px; }
+    .head-nav li:nth-child(6):hover ~ .head-nav-mv {
+      left: 406px; }
+    .head-nav li:nth-child(7):hover ~ .head-nav-mv {
+      left: 487.2px;
+      border-right: 0 none; }
+    .head-nav li a {
+      font-size: 16px; }
+
+  #header {
+    height: 68px; }
+    #header nav {
+      padding-top: 29px; }
+    #header h1 {
+      display: none; } }
+@media screen and (max-width: 640px) {
+  .head-nav li {
+    padding: 0 7.6px; }
+    .head-nav li:nth-child(1):hover ~ .head-nav-mv {
+      left: 0; }
+    .head-nav li:nth-child(2):hover ~ .head-nav-mv {
+      left: 81.2px; }
+    .head-nav li:nth-child(3):hover ~ .head-nav-mv {
+      left: 162.4px; }
+    .head-nav li:nth-child(4):hover ~ .head-nav-mv {
+      left: 243.6px; }
+    .head-nav li:nth-child(5):hover ~ .head-nav-mv {
+      left: 324.8px; }
+    .head-nav li:nth-child(6):hover ~ .head-nav-mv {
+      left: 406px; }
+    .head-nav li:nth-child(7):hover ~ .head-nav-mv {
+      left: 487.2px;
+      border-right: 0 none; }
+    .head-nav li a {
+      font-size: 16px; }
+
+  #header {
+    height: 68px; }
+    #header nav {
+      padding-top: 29px; }
+    #header h1 {
+      display: none; } }
 /*footer*/
 #footer {
   height: 95px;
@@ -266,3 +343,5 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
   color: #000000;
   font-weight: bold;
   font-family: "Arial"; }
+
+/*@ sourceMappingURL=index.css.map */

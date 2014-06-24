@@ -4,7 +4,7 @@ $font-h-color:#346eb4; //font-hover-color
 $width-large:1200px;  //媒体查询大屏
 $width-medium:1024px;  //媒体查询中屏
 $width-medium2:780px;  //媒体查询中屏
-$width-small:480px;  //媒体查询小屏
+$width-small:640px;  //媒体查询小屏
 $nav-li-width:72px; //主导航li宽度
 $nav-li-pd:19px;
 //通用transition
@@ -96,8 +96,8 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legen
       @extend %trans;
     }
 }
-
-@media screen and (max-width:$width-large) {
+//头部大屏1200px
+@media screen and (max-width:$width-large+1) {
   .head-nav{
     li {
       width: $nav-li-width*0.9;
@@ -137,8 +137,8 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legen
         height: 38px;}
   }
 }
-
-@media screen and (max-width:$width-medium) {
+//头部中屏1 1024px
+@media screen and (max-width:$width-medium+1) {
   .head-nav{
     li {
         padding: 0 $nav-li-pd*0.6;
@@ -178,20 +178,123 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legen
       height: 30px;}
   }
 }
-
-@media screen and (max-width: $width-medium) and (min-width: $width-medium2){
-    #header{
-      h1{
-        display: none;
+//头部中屏2  780px-860
+@media screen and  (max-width: 861px) and (min-width: $width-medium2+1){
+  .head-nav{
+    li {
+      padding: 0 $nav-li-pd*0.4;
+      &:nth-child(1):hover ~ .head-nav-mv {
+        left: 0;
       }
+      &:nth-child(2):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*1;
+      }
+      &:nth-child(3):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*2;
+      }
+      &:nth-child(4):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*3;
+      }
+      &:nth-child(5):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*4;
+      }
+      &:nth-child(6):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*5;
+      }
+      &:nth-child(7):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*6;
+        border-right: 0 none;
+      }
+      a{ font-size: 16px;}
+    }
+  }
+    #header{
+      height: 68px;
+      nav{
+        padding-top: 29px;}
+      h1{
+        margin-top: 24px;
+        width: 120px;
+        height: 24px;}
     }
 }
-
-@media screen and (max-width: $width-medium){
-  #header{
-    h1{
-      display: none;
+//头部小屏 640px-781
+@media screen and (min-width: $width-small+1) and (max-width: 781px){
+  .head-nav{
+    li {
+      padding: 0 $nav-li-pd*0.4;
+      &:nth-child(1):hover ~ .head-nav-mv {
+        left: 0;
+      }
+      &:nth-child(2):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*1;
+      }
+      &:nth-child(3):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*2;
+      }
+      &:nth-child(4):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*3;
+      }
+      &:nth-child(5):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*4;
+      }
+      &:nth-child(6):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*5;
+      }
+      &:nth-child(7):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*6;
+        border-right: 0 none;
+      }
+      a{ font-size: 16px;}
     }
+  }
+
+  #header{
+    height: 68px;
+    nav{
+      padding-top: 29px;}
+    h1{
+      display: none;}
+  }
+}
+
+//头部小屏 640px
+@media screen and (max-width: $width-small){
+  .head-nav{
+    li {
+      padding: 0 $nav-li-pd*0.4;
+      &:nth-child(1):hover ~ .head-nav-mv {
+        left: 0;
+      }
+      &:nth-child(2):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*1;
+      }
+      &:nth-child(3):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*2;
+      }
+      &:nth-child(4):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*3;
+      }
+      &:nth-child(5):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*4;
+      }
+      &:nth-child(6):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*5;
+      }
+      &:nth-child(7):hover ~ .head-nav-mv {
+        left: ($nav-li-width+$nav-li-pd*0.8+2)*6;
+        border-right: 0 none;
+      }
+      a{ font-size: 16px;}
+    }
+  }
+
+  #header{
+    height: 68px;
+    nav{
+      padding-top: 29px;}
+    h1{
+      display: none;}
   }
 }
 /*footer*/
