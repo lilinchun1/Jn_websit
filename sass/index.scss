@@ -5,6 +5,7 @@ $width-large:1200px;  //媒体查询大屏
 $width-medium:1024px;  //媒体查询中屏
 $width-medium2:780px;  //媒体查询中屏
 $width-small:640px;  //媒体查询小屏
+$width-small2:480px;//媒体查询小屏
 $nav-li-width:72px; //主导航li宽度
 $nav-li-pd:19px;
 //通用transition
@@ -207,6 +208,11 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legen
       }
       a{ font-size: 16px;}
     }
+    .head-nav-mv{
+      width: $nav-li-width*0.8;
+      border-top: 4px solid #e74c3c;
+
+    }
   }
     #header{
       height: 68px;
@@ -296,6 +302,53 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legen
     h1{
       display: none;}
   }
+}
+
+//头部小屏480px
+@media screen and (max-width: $width-small2){
+  .head-nav{
+    li {
+      width: $nav-li-width*0.8;
+      padding: 0 $nav-li-pd*0.1;
+      &:nth-child(1):hover ~ .head-nav-mv {
+        left: 0;
+      }
+      &:nth-child(2):hover ~ .head-nav-mv {
+        left: ($nav-li-width*0.8+$nav-li-pd*0.2+2)*1;
+      }
+      &:nth-child(3):hover ~ .head-nav-mv {
+        left: ($nav-li-width*0.8+$nav-li-pd*0.2+2)*2;
+      }
+      &:nth-child(4):hover ~ .head-nav-mv {
+        left: ($nav-li-width*0.8+$nav-li-pd*0.2+2)*3;
+      }
+      &:nth-child(5):hover ~ .head-nav-mv {
+        left: ($nav-li-width*0.8+$nav-li-pd*0.2+2)*4;
+      }
+      &:nth-child(6):hover ~ .head-nav-mv {
+        left: ($nav-li-width*0.8+$nav-li-pd*0.2+2)*5;
+      }
+      &:nth-child(7):hover ~ .head-nav-mv {
+        left: ($nav-li-width*0.8+$nav-li-pd*0.2+2)*6;
+        border-right: 0 none;
+      }
+      a{ font-size: 12px;}
+    }
+    .head-nav-mv{
+      width: $nav-li-width*0.8;
+      border-top: 2px solid #e74c3c;
+
+    }
+  }
+
+  #header{
+    height: 68px;
+    nav{
+      padding-top: 29px;}
+    h1{
+      display: none;}
+  }
+
 }
 /*footer*/
 #footer{ height: 95px; background: #1c1f21; line-height: 95px;}
