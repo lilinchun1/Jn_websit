@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import "rest";
-$font-n-color:#666;     //font-normal-color
-$font-h-color:#346eb4; //font-hover-color
-//通用transition
-%trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}
+
+$font-n-color:#666;     //文字默认颜色
+$font-h-color:#346eb4; //文字划过颜色
+
+%trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
 
 body {
   color: $font-n-color;
@@ -15,36 +16,3 @@ a{
 .wrap-box{
   margin: 0 auto;
   width: 1280px;}
-
-/*header*/
-#header{
-  height: 119px;
-  border-bottom:1px solid #a5a2a2;
-    h1{
-      float: left;
-      margin: 40px 0 0 32px;
-      width: 207px;
-      height: 42px;
-        img { width: 100%; }
-    }
-    nav{
-      padding-top: 50px;
-      position: relative;
-      float: right;}
-}
-/*header-end*/
-
-/*footer*/
-#footer{ height: 95px; background: #1c1f21; line-height: 95px;}
-#footer em{ padding-left: 84px; float: left; color: #ffffff;}
-.footer-nav { float: right;}
-.footer-nav li{ float: left;}
-.footer-nav li a{ padding: 0 15px; color: #ffffff;}
-/*index-slider*/
-.index-slider{ height: 502px; border: 1px solid #a5a2a2; background: #cccccc;}
-
-.index-banner{ padding-top: 84px;height: 204px;}
-.index-banner h2{ margin-left: -429px; width: 858px; height: 46px;}
-.index-banner figure{ position: relative; left: 50%;}
-.index-banner figcaption{ margin-top: 35px; margin-left: -226px;  font-size: 34px; color: #000000; font-weight: bold;font-family: "Arial";}
-/*footer-end*/
