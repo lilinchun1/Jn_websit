@@ -134,8 +134,8 @@
 
 /* line 145, ../sass/slide.scss */
 h2 {
-  color: white;
-  font-family: 'Sirin Stencil', serif;
+  color: #333333;
+  font-family: "Microsoft Yahei";
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -166,7 +166,7 @@ h3 {
 
 /* line 169, ../sass/slide.scss */
 .title {
-  font-size: 3.4em;
+  font-size: 6em;
   left: 65%;
   width: 35%;
   opacity: 0;
@@ -195,8 +195,8 @@ h3 {
 
 /* line 190, ../sass/slide.scss */
 .subtitle {
-  color: black;
-  font-size: 2em;
+  color: #636363;
+  font-size: 1.6em;
   left: 35%;
   width: 35%;
   opacity: 0;
@@ -383,5 +383,18 @@ h3 {
     /* line 406, ../sass/slide.scss */
     #sequence .sequence-pagination {
       right: 17.5%; } }
+/* line 411, ../sass/slide.scss */
+.h2-title-embk {
+  margin-left: 15px;
+  padding: 0 5px;
+  height: 40px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 40px;
+  text-align: center;
+  display: inline; }
 
 /*@ sourceMappingURL=slide.css.map */
