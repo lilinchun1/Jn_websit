@@ -59,6 +59,9 @@ audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline; }
 
+.icons-sprite {
+  background: url('../images/icons-sbae01b8e33.png') no-repeat; }
+
 .nav-list li, .tw-block, .foot-nav li a {
   -webkit-transition: all .3s ease-in-out 0s;
   -moz-transition: all .3s ease-in-out 0s;
@@ -90,9 +93,12 @@ a {
   margin: 40px 0 0 32px;
   width: 207px;
   height: 42px;
-  overflow: hidden; }
-  .logo img {
-    width: 100%; }
+  overflow: hidden;
+  text-indent: -999em;
+  background: url('../images/icons-s334dcd0e27.png') 0 -88px no-repeat; }
+  .logo a {
+    height: 42px;
+    display: block; }
 
 .nav-main {
   float: right;
@@ -154,10 +160,11 @@ a {
   overflow: hidden; }
   .banner-tt h2 {
     margin: 82px auto 0 auto;
-    width: 848px;
-    height: 46px; }
-    .banner-tt h2 img {
-      width: 100%; }
+    width: 860px;
+    height: 46px;
+    background: url('../images/icons-s334dcd0e27.png') 0 -130px no-repeat;
+    overflow: hidden;
+    text-indent: -999em; }
   .banner-tt h3 {
     margin-top: 34px;
     font-size: 34px;
@@ -186,8 +193,7 @@ a {
     width: 88px;
     height: 88px;
     border-radius: 5px;
-    display: block;
-    background: #e74c3c; }
+    display: block; }
   .tw-block b {
     margin-top: 16px;
     display: block;
@@ -214,6 +220,15 @@ a {
   color: #ffffff;
   font-size: 10px;
   font-size: 1rem; }
+
+.icon-hz {
+  background: #e74c3c url('../images/icons-s334dcd0e27.png') 0 0 no-repeat; }
+
+.icon-qd {
+  background: #e74c3c url('../images/icons-s334dcd0e27.png') 0 -176px no-repeat; }
+
+.icon-td {
+  background: #e74c3c url('../images/icons-s334dcd0e27.png') 0 -264px no-repeat; }
 
 .foot {
   height: 95px;
