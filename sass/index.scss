@@ -4,11 +4,15 @@
 $font-n-color:#666;     //文字默认颜色
 $font-h-color:#346eb4; //文字划过颜色
 $n-color:#e74c3c;       //主题颜色
+$bdr-color:#a5a2a2;     //边框颜色
+$nav-li-with:100px;   //主导航li宽度
+$nav-li-bdr:2px;      //主导航li边框宽度
 
 %trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
 
 body {
   color: $font-n-color;
+  background: #313131;
 }
 a{
   color: $font-n-color;
@@ -16,11 +20,12 @@ a{
 }
 .wrap-box{
   margin: 0 auto;
-  width: 1280px;}
+  width: 1280px;
+  background: #ffffff;}
 
 .head{
   height: 120px;
-  border-bottom: 1px solid #a5a2a2;
+  border-bottom: 1px solid $bdr-color;
   overflow: hidden;}
 .logo{
   float: left;
@@ -33,6 +38,7 @@ a{
 }
 .nav-main{
   float: right;
+  padding-right: 25px;
   height: 120px;
 }
 .nav-list{
@@ -43,22 +49,153 @@ a{
   li{
       margin-top: 50px;
       float: left;
-      width: 100px;
+      width: $nav-li-with;
       height: 20px;
       line-height: 20px;
       text-align: center;
-      border-right: 2px solid #82898c;
+      border-right: $nav-li-bdr solid #82898c;
+      @extend %trans;
         a{
           font-size: 18px;
           font-size: 1.8rem;
         }
-      &:last-child{
+      &:nth-last-child(2){
         border-right: 0 none;}
+      &:hover a {
+        font-weight: bold;
+      }
+      &:nth-child(1):hover ~ .active-line{
+        left: 0;
+      }
+      &:nth-child(2):hover ~ .active-line{
+        left: $nav-li-with + $nav-li-bdr;
+      }
+      &:nth-child(3):hover ~ .active-line{
+        left: ($nav-li-with + $nav-li-bdr) * 2;
+      }
+      &:nth-child(4):hover ~ .active-line{
+        left: ($nav-li-with + $nav-li-bdr) * 3;
+      }
+      &:nth-child(5):hover ~ .active-line{
+        left: ($nav-li-with + $nav-li-bdr) * 4;
+      }
+      &:nth-child(6):hover ~ .active-line{
+        left: ($nav-li-with + $nav-li-bdr) * 5;
+      }
+      &:nth-child(7):hover ~ .active-line{
+        left: ($nav-li-with + $nav-li-bdr) * 6;
+      }
     }
+  .active a{
+    font-weight: bolder;
+  }
   .active-line{
     position: absolute;
     top: -50px;
     left: 0;
     height: 6px;
+    border-right: 0 none;
     background: $n-color;}
+}
+
+.slide{
+  height: 500px;
+  overflow: hidden;
+  border-bottom: 1px solid $bdr-color;}
+.banner-tt{
+  *margin-bottom: 40px;
+  height: 235px;
+  overflow: hidden;
+    h2{
+      margin: 82px auto 0 auto;
+      width: 848px;
+      height: 46px;
+        img{
+          width: 100%;}
+    }
+    h3{
+      margin-top: 34px;
+      font-size: 34px;
+      text-align: center;
+      font-family: Arial;
+      color: #2b363c;
+    }
+}
+.tw-item{
+  margin: 54px auto 40px auto;
+  width: 990px;
+  height: 130px;
+  overflow: hidden;
+  *display: none;
+}
+.tw-block{
+  position: relative;
+  top: 0;
+  float: left;
+  width: 33.33%;
+/*  height: 238px;*/
+  @extend %trans;
+  text-align: center;
+  span{
+    position: relative;
+    left: 50%;
+    margin-left: -44px;
+    width: 88px;
+    height: 88px;
+    border-radius: 5px;
+    display: block;
+    background: $n-color;}
+  b {
+    margin-top: 16px;
+    display: block;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  p{
+    margin: 2px 30px 0 30px;
+  }
+    &:hover{
+      top: -108px;
+        b,p,{color: $font-n-color;}
+    }
+}
+.tw-block-btn{
+  position: relative;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: 14px;
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 5px;
+  text-align: center;
+  background: $n-color;
+  color: #ffffff;
+  font-size: 10px;
+  font-size: 1rem;
+}
+.foot {
+  height: 95px;
+  background: #1c1f21;
+  overflow: hidden;
+    em{
+      padding-left: 85px;
+      line-height: 95px;
+      color: #ffffff;}
+}
+.foot-nav{
+  padding: 38px 60px 0 0;
+  float: right;
+    li{
+      margin-right: 30px;
+      display: inline;
+        a{
+          font-size: 14px;
+          font-size: 1.4rem;
+          color: #6f6f6f;
+          @extend %trans;
+          &:hover{
+            color: #ffffff;}
+        }
+    }
 }
