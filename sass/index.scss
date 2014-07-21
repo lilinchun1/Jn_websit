@@ -3,6 +3,7 @@
 
 $font-n-color:#666;     //文字默认颜色
 $font-h-color:#346eb4; //文字划过颜色
+$n-color:#e74c3c;       //主题颜色
 
 %trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
 
@@ -16,3 +17,48 @@ a{
 .wrap-box{
   margin: 0 auto;
   width: 1280px;}
+
+.head{
+  height: 120px;
+  border-bottom: 1px solid #a5a2a2;
+  overflow: hidden;}
+.logo{
+  float: left;
+  margin: 40px 0 0 32px;
+  width: 207px;
+  height: 42px;
+  overflow: hidden;
+  img{
+    width: 100%;}
+}
+.nav-main{
+  float: right;
+  height: 120px;
+}
+.nav-list{
+  position: relative;
+  float: right;
+  height: 120px;
+  overflow: hidden;
+  li{
+      margin-top: 50px;
+      float: left;
+      width: 100px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-right: 2px solid #82898c;
+        a{
+          font-size: 18px;
+          font-size: 1.8rem;
+        }
+      &:last-child{
+        border-right: 0 none;}
+    }
+  .active-line{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 6px;
+    background: $n-color;}
+}

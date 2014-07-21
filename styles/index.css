@@ -9,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
   background-color: white;
@@ -28,9 +29,11 @@ i, em, strong, span, address {
   font-style: normal; }
 
 h1, h2 {
+  font-size: 14px;
   font-size: 1.4rem; }
 
 h3, h4 {
+  font-size: 14px;
   font-size: 1.2rem; }
 
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
@@ -67,5 +70,48 @@ a {
 .wrap-box {
   margin: 0 auto;
   width: 1280px; }
+
+.head {
+  height: 120px;
+  border-bottom: 1px solid #a5a2a2;
+  overflow: hidden; }
+
+.logo {
+  float: left;
+  margin: 40px 0 0 32px;
+  width: 207px;
+  height: 42px;
+  overflow: hidden; }
+  .logo img {
+    width: 100%; }
+
+.nav-main {
+  float: right;
+  height: 120px; }
+
+.nav-list {
+  position: relative;
+  float: right;
+  height: 120px;
+  overflow: hidden; }
+  .nav-list li {
+    margin-top: 50px;
+    float: left;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-right: 2px solid #82898c; }
+    .nav-list li a {
+      font-size: 18px;
+      font-size: 1.8rem; }
+    .nav-list li:last-child {
+      border-right: 0 none; }
+  .nav-list .active-line {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 6px;
+    background: #e74c3c; }
 
 /*@ sourceMappingURL=index.css.map */
