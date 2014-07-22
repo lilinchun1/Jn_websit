@@ -9,7 +9,11 @@ $bdr-color:#a5a2a2;     //边框颜色
 $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
 $tw-block-span-wh:88px; //首页3个橙色块的宽高
-
+%about-tt{
+  height: 40px;
+  text-indent: -999em;
+  border-bottom: 1px solid $bdr-color;
+}
 
 @import "icons/*.png";
 $icons:sprite-map("icons/*.png");
@@ -203,6 +207,8 @@ a{
   background: #1c1f21;
   overflow: hidden;
     em{
+      font-size: 14px;
+      font-size: 1.4rem;
       padding-left: 85px;
       line-height: 95px;
       color: #ffffff;}
@@ -409,10 +415,8 @@ a{
   width: 96%;
   overflow: hidden;
     h2 {
-      height: 40px;
-      text-indent: -999em;
+      @extend %about-tt;
       background: sprite($icons2,about-tt1) no-repeat;
-      border-bottom: 1px solid $bdr-color;
     }
   p{
     margin-top: 20px;
@@ -427,20 +431,23 @@ a{
   width: 96%;
   overflow: hidden;
   h2 {
-    height: 40px;
-    text-indent: -999em;
+    @extend %about-tt;
     background: sprite($icons2,about-tt2) no-repeat;
-    border-bottom: 1px solid $bdr-color;
+
   }
   .about-team-list{
-
+    padding-top: 22px;
+    overflow: hidden;
       li{
+        margin: 0 30px 30px 30px;
         position: relative;
+        float: left;
         width: 246px;
         height: 292px;
         background: #ffffff;
         border-radius: 5px;
         overflow: hidden;
+        box-shadow: 0 0 7px #f1f1f1;
         @extend %trans;
           &:hover .about-team-info{
             top: 0;
@@ -474,5 +481,56 @@ a{
     }
   p{
     margin-top: 5px;}
-
 }
+.about-subsidiary{
+  margin: 25px auto 50px auto;
+  width: 96%;
+  overflow: hidden;
+  h2 {
+    @extend %about-tt;
+    background: sprite($icons2,about-tt3) no-repeat;
+  }
+}
+.about-subsidiary-list{
+
+    li{
+      padding: 30px 0 0 0;
+      width: 50%;
+      height: 132px;
+      border-bottom: 1px solid $bdr-color;
+      float: left;
+        &:nth-child(2n)::after{
+            content: '';
+          position: relative;
+          top: -120px;
+          left: -10px;
+          width: 1px;
+          height: 130px;
+          display: block;
+          border-left: 1px solid $bdr-color;
+        }
+    }
+    address{
+      margin-left: 5px;
+      height: 20px;
+      line-height: 20px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #919da4;
+    }
+    .cp-name{
+      font-weight: bold;
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: $font-n-color;
+    }
+}
+.cp-phone,.cp-address{
+  padding-left: 26px;
+}
+.cp-phone{
+  background: sprite($icons2,phone)  no-repeat;
+}
+.cp-address{
+  background: sprite($icons2,address)  no-repeat;}
