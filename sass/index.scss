@@ -12,7 +12,9 @@ $tw-block-span-wh:88px; //首页3个橙色块的宽高
 
 @import "compass/utilities/sprites";
 @import "icons/*.png";
+@import "icons2/*.png";
 $icons:sprite-map("icons/*.png",$layout:smart);
+$icons2:sprite-map("icons2/*.png",$layout:smart);
 
 %trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
 
@@ -278,11 +280,11 @@ a{
 }
 .serve-bg3{
   height: 600px;
-  background: url(../images/3.png)  no-repeat;
+  background: url(../images/3.png) left center no-repeat;
   article{
     margin: 22% 10% 0 0;
     float: right;
-    width: 430px;
+    width: 428px;
     h3{
       background: sprite($icons,serve3) no-repeat;}
   }
@@ -311,6 +313,9 @@ a{
       display: block;
       text-align: center;
       border-radius: 5px;
+        &:hover{
+          background: $n-h-color;
+        }
         a{
           display: block;
           font-size: 18px;
@@ -318,4 +323,71 @@ a{
           color: #ffffff;
         }
     }
+}
+.product-wrap{
+  width: 100%;
+  overflow: hidden;
+}
+.product-list{
+    li{
+      padding: 0 8%;
+      background-color: #f6f6f6;
+      height: 500px;
+        &:nth-child(2n-1){
+          background-color: #ededed;
+        }
+    }
+    article{
+      width: 740px;
+      overflow: hidden;
+    }
+    h2{
+      height: 32px;
+      text-indent: -999em;
+    }
+    p{
+      margin-top: 10px;
+      color: #919da4;
+      font-size: 18px;
+      font-size: 1.8rem;
+    }
+}
+.product-item1 {
+  background-image: url(../images/lsj.png);
+  background-repeat: no-repeat;
+  background-position: 8% center;
+    article{
+      margin-top: 10%;
+      float: right;
+    }
+    h2{
+     background: sprite($icons2,twz1) no-repeat;
+    }
+}
+
+.product-item2{
+  background-image: url(../images/bgj.png);
+  background-repeat: no-repeat;
+  background-position: right 8% center;
+  background-position: right center\9;
+    article{
+      margin: 12% 0 0 0;
+      float: left;
+    }
+    h2{
+      background: sprite($icons2,twz2) no-repeat;
+    }
+}
+.product-item3{
+  background-image: url(../images/sjd.png);
+  background-repeat: no-repeat;
+  background-position: 8% center;
+  article{
+    margin-top: 10%;
+    width: 680px;
+    float: right;
+  }
+  h2{
+    background: sprite($icons2,twz3) no-repeat;
+  }
 }
