@@ -62,7 +62,7 @@ audio, canvas, progress, video {
 .icons-sprite {
   background: url('../images/icons-sbae01b8e33.png') no-repeat; }
 
-.nav-list li, .tw-block, .foot-nav li a {
+.nav-list li, .tw-block, .tw-block-btn, .foot-nav li a {
   -webkit-transition: all .3s ease-in-out 0s;
   -moz-transition: all .3s ease-in-out 0s;
   -ms-transition: all .3s ease-in-out 0s;
@@ -118,6 +118,8 @@ a {
     line-height: 20px;
     text-align: center;
     border-right: 2px solid #82898c; }
+    .nav-list li:hover a {
+      color: #545d62; }
     .nav-list li a {
       font-size: 18px;
       font-size: 1.8rem; }
@@ -220,6 +222,8 @@ a {
   color: #ffffff;
   font-size: 10px;
   font-size: 1rem; }
+  .tw-block-btn:hover {
+    background: #545d62; }
 
 .icon-hz {
   background: #e74c3c url('../images/icons-s334dcd0e27.png') 0 0 no-repeat; }
@@ -251,5 +255,3 @@ a {
       color: #6f6f6f; }
       .foot-nav li a:hover {
         color: #ffffff; }
-
-/*@ sourceMappingURL=index.css.map */

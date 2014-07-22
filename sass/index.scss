@@ -4,6 +4,7 @@
 $font-n-color:#666;     //文字默认颜色
 $font-h-color:#346eb4; //文字划过颜色
 $n-color:#e74c3c;       //主题颜色
+$n-h-color:#545d62;     //主题hover颜色
 $bdr-color:#a5a2a2;     //边框颜色
 $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
@@ -63,6 +64,9 @@ a{
       text-align: center;
       border-right: $nav-li-bdr solid #82898c;
       @extend %trans;
+        &:hover a{
+          color: $n-h-color;
+        }
         a{
           font-size: 18px;
           font-size: 1.8rem;
@@ -182,6 +186,10 @@ a{
   color: #ffffff;
   font-size: 10px;
   font-size: 1rem;
+  @extend %trans;
+    &:hover{
+      background: $n-h-color;
+    }
 }
 .icon-hz{ background: $n-color sprite($icons,icon1) no-repeat; }
 .icon-qd{ background: $n-color sprite($icons,icon2) no-repeat; }
