@@ -10,11 +10,12 @@ $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
 $tw-block-span-wh:88px; //首页3个橙色块的宽高
 
-@import "compass/utilities/sprites";
+
 @import "icons/*.png";
+$icons:sprite-map("icons/*.png");
+$icons2-spacing:20px;
 @import "icons2/*.png";
-$icons:sprite-map("icons/*.png",$layout:smart);
-$icons2:sprite-map("icons2/*.png",$layout:smart);
+$icons2:sprite-map("icons2/*.png", $spacing:20px);
 
 %trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
 
@@ -324,6 +325,7 @@ a{
         }
     }
 }
+/*产品介绍*/
 .product-wrap{
   width: 100%;
   overflow: hidden;
@@ -390,4 +392,87 @@ a{
   h2{
     background: sprite($icons2,twz3) no-repeat;
   }
+}
+/*关于我们*/
+.about-banner{
+  height: 503px;
+  border-bottom: 1px solid $bdr-color;
+  background: url(../images/banner.jpg) 0 0 no-repeat;
+}
+.about-wrap{
+  width: 100%;
+  overflow: hidden;
+  background: #f6f6f6;
+}
+.about-pro{
+  margin: 95px auto 0 auto;
+  width: 96%;
+  overflow: hidden;
+    h2 {
+      height: 40px;
+      text-indent: -999em;
+      background: sprite($icons2,about-tt1) no-repeat;
+      border-bottom: 1px solid $bdr-color;
+    }
+  p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #919da4;
+    line-height: 30px;
+  }
+}
+.about-team{
+  margin: 50px auto 0 auto;
+  width: 96%;
+  overflow: hidden;
+  h2 {
+    height: 40px;
+    text-indent: -999em;
+    background: sprite($icons2,about-tt2) no-repeat;
+    border-bottom: 1px solid $bdr-color;
+  }
+  .about-team-list{
+
+      li{
+        position: relative;
+        width: 246px;
+        height: 292px;
+        background: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        @extend %trans;
+          &:hover .about-team-info{
+            top: 0;
+            border-radius: 5px;
+          }
+      }
+  }
+}
+.about-team-pic{
+  height: 222px;
+  img{
+    width: 100%;
+  }
+}
+.about-team-info{
+  position: absolute;
+  top: 222px;
+  padding: 14px;
+  width: 218px;
+  height: 292px;
+  background: #ffffff;
+  @extend %trans;
+    h3{
+      font-size: 20px;
+      font-size: 2.0rem;
+    }
+    h4,p{
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #919da4;
+    }
+  p{
+    margin-top: 5px;}
+
 }
