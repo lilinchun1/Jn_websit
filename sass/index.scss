@@ -85,6 +85,7 @@ a{
       @extend %trans;
         &:hover a{
           color: $n-h-color;
+          font-weight: bold;
         }
         a{
           font-size: 18px;
@@ -92,9 +93,6 @@ a{
         }
       &:nth-last-child(2){
         border-right: 0 none;}
-      &:hover a {
-        font-weight: bold;
-      }
       &:nth-child(1):hover ~ .active-line{
         left: 0;
       }
@@ -709,5 +707,72 @@ a{
       line-height: 22px;
       color: $font-n-color;
       background: sprite($icons2,contact6) no-repeat;
+    }
+}
+
+/*列表页*/
+.list-wrap{
+  width: 100%;
+  overflow: hidden;
+}
+.list-ullist{
+  width: 100%;
+  overflow: hidden;
+  li{
+    padding: 0 4%;
+    height: 114px;
+    border: 1px solid $bdr-color2;
+    background: #ededed;
+    overflow: hidden;
+  }
+  li:nth-child(2n+1){
+    background: #f6f6f6;
+  }
+}
+.list-news-date{
+  position: relative;
+  top: 50%;
+  margin-top: -30px;
+  padding: 10px 6px;
+  width: 48px;
+  height: 40px;
+  border-radius: 5px;
+  background: $n-color;
+}
+.time-size-little {
+  height: 12px;
+  line-height: 12px;
+  font-size: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Arial";
+  display: block;
+}
+.time-size-large{
+  height: 32px;
+  line-height: 32px;
+  font-size: 30px;
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Arial";
+  display: block;
+  text-align: right;
+}
+.list-news-info{
+  margin-left: 70px;
+  overflow: hidden;
+    h2{
+      font-size: 20px;
+      font-size: 2rem;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px solid $bdr-color;
+    }
+    p{
+      height: 29px;
+      line-height: 29px;
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: $font-n-color2;
     }
 }
