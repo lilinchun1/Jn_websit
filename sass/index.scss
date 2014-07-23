@@ -2,19 +2,31 @@
 @import "rest";
 
 $font-n-color:#666;     //文字默认颜色
+$font-n-color2:#919da4; //文字默认颜色 浅色
 $font-h-color:#346eb4; //文字划过颜色
 $n-color:#e74c3c;       //主题颜色
 $n-h-color:#545d62;     //主题hover颜色
-$bdr-color:#a5a2a2;     //边框颜色
+$bdr-color:#ececec;     //边框颜色
+$bdr-color2:#a5a2a2;     //边框颜色2
 $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
 $tw-block-span-wh:88px; //首页3个橙色块的宽高
+//关于页标题
 %about-tt{
   height: 40px;
   text-indent: -999em;
   border-bottom: 1px solid $bdr-color;
 }
-
+//带背景色的外包裹
+%wrap{
+  width: 100%;
+  overflow: hidden;
+  background: #f6f6f6;
+}
+%w96p{
+  width: 96%;
+  overflow: hidden;
+}
 @import "icons/*.png";
 $icons:sprite-map("icons/*.png");
 $icons2-spacing:20px;
@@ -38,7 +50,7 @@ a{
 
 .head{
   height: 120px;
-  border-bottom: 1px solid $bdr-color;
+  border-bottom: 1px solid $bdr-color2;
   overflow: hidden;}
 .logo{
   float: left;
@@ -120,7 +132,7 @@ a{
 .slide{
   height: 500px;
   overflow: hidden;
-  border-bottom: 1px solid $bdr-color;}
+  border-bottom: 1px solid $bdr-color2;}
 .banner-tt{
   *margin-bottom: 40px;
   height: 235px;
@@ -232,16 +244,13 @@ a{
 
 /*服务介绍页*/
 .serve-warp{
-  width: 100%;
-  overflow: hidden;
-  background: #f7f7f7;
+  @extend %wrap;
 }
 .serve-tt{
   margin: 0 auto;
-  width: 96%;
+  @extend %w96p;
   height: 222px;
   border-bottom: 1px solid $bdr-color;
-  overflow: hidden;
     em{
       margin: 94px auto 0 auto;
       width: 753px;
@@ -251,8 +260,7 @@ a{
 }
 .serve-section{
   margin: 0 auto;
-  width: 96%;
-  overflow: hidden;
+  @extend %w96p;
     h3{
       text-indent: -999em;
       height: 45px;
@@ -282,6 +290,7 @@ a{
     float: left;
     width: 440px;
     h3{
+      height: 42px;
       background: sprite($icons,serve2) no-repeat;}
   }
 }
@@ -309,7 +318,7 @@ a{
 }
 .serve-btn{
   margin: 0 auto;
-  width: 96%;
+  @extend %w96p;
   border-top: 1px solid $bdr-color;
     em{
       margin: 45px auto 100px auto;
@@ -320,6 +329,7 @@ a{
       display: block;
       text-align: center;
       border-radius: 5px;
+      @extend %trans;
         &:hover{
           background: $n-h-color;
         }
@@ -355,7 +365,7 @@ a{
     }
     p{
       margin-top: 10px;
-      color: #919da4;
+      color: $font-n-color2;
       font-size: 18px;
       font-size: 1.8rem;
     }
@@ -406,14 +416,11 @@ a{
   background: url(../images/banner.jpg) 0 0 no-repeat;
 }
 .about-wrap{
-  width: 100%;
-  overflow: hidden;
-  background: #f6f6f6;
+  @extend %wrap;
 }
 .about-pro{
   margin: 95px auto 0 auto;
-  width: 96%;
-  overflow: hidden;
+  @extend %w96p;
     h2 {
       @extend %about-tt;
       background: sprite($icons2,about-tt1) no-repeat;
@@ -422,14 +429,13 @@ a{
     margin-top: 20px;
     font-size: 16px;
     font-size: 1.6rem;
-    color: #919da4;
+    color: $font-n-color2;
     line-height: 30px;
   }
 }
 .about-team{
   margin: 50px auto 0 auto;
-  width: 96%;
-  overflow: hidden;
+  @extend %w96p;
   h2 {
     @extend %about-tt;
     background: sprite($icons2,about-tt2) no-repeat;
@@ -477,15 +483,14 @@ a{
     h4,p{
       font-size: 14px;
       font-size: 1.4rem;
-      color: #919da4;
+      color: $font-n-color2;
     }
   p{
     margin-top: 5px;}
 }
 .about-subsidiary{
   margin: 25px auto 50px auto;
-  width: 96%;
-  overflow: hidden;
+  @extend %w96p;
   h2 {
     @extend %about-tt;
     background: sprite($icons2,about-tt3) no-repeat;
@@ -517,7 +522,7 @@ a{
       margin-bottom: 15px;
       font-size: 16px;
       font-size: 1.6rem;
-      color: #919da4;
+      color: $font-n-color2;
     }
     .cp-name{
       font-weight: bold;
@@ -534,3 +539,101 @@ a{
 }
 .cp-address{
   background: sprite($icons2,address)  no-repeat;}
+
+/*合作伙伴*/
+.cooperation-wrap{
+  @extend %wrap;
+}
+.cooperation-tt{
+  height: 182px;
+  overflow: hidden;
+  h2{
+    margin: 96px auto 0 auto;
+    width: 378px;
+    height: 36px;
+    text-indent: -999em;
+    background: sprite($icons2,coop1) no-repeat;
+  }
+}
+.cooperation-bk{
+  margin: 0 auto;
+  @extend %w96p;
+    h2{
+      @extend %about-tt;
+      background: sprite($icons2,coop2) no-repeat;
+    }
+}
+.cooperation-list{
+  padding: 32px 0 48px 0;
+  overflow: hidden;
+    li{
+      margin: 0 40px;
+      float: left;
+      width: 316px;
+      height: 306px;
+    }
+
+  img{
+    width: 100%;}
+  em{
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  i{
+    margin-top: 4px;
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: $font-n-color2;
+  }
+}
+.cooperation-list-pic-box{
+    position: relative;
+    width: 316px;
+    height: 190px;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    @extend %trans;
+      &:hover .pic-box-btn{
+        opacity: 1;
+      }
+      &:hover .pic-box-btn-icon{
+        left: 50%;
+      }
+}
+.pic-box-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  opacity: 0;
+  @extend %trans;
+}
+.pic-box-btn-icon {
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  margin: -30px 0 0 -30px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 5px;
+  line-height: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  @extend %trans;
+    &:hover{
+      border-radius: 50%;
+    }
+}
