@@ -46,7 +46,6 @@ a{
 .wrap-box{
   margin: 0 auto;
   width: 1280px;
-  overflow: hidden;
   background: #ffffff;}
 
 .head{
@@ -239,6 +238,8 @@ a{
             color: #ffffff;}
         }
     }
+  .active a{
+    color: #ffffff;}
 }
 
 /*服务介绍页*/
