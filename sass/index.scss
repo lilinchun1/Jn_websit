@@ -27,10 +27,10 @@ $tw-block-span-wh:88px; //首页3个橙色块的宽高
   width: 96%;
   overflow: hidden;
 }
-@import "icons/*.png";
+/*@import "icons*//*.png";*/
 $icons:sprite-map("icons/*.png");
 $icons2-spacing:20px;
-@import "icons2/*.png";
+/*@import "icons2*//*.png";*/
 $icons2:sprite-map("icons2/*.png", $spacing:20px);
 
 %trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
@@ -635,5 +635,79 @@ a{
   @extend %trans;
     &:hover{
       border-radius: 50%;
+    }
+}
+
+.cooperation-bk2{
+  h2{
+    @extend %about-tt;
+    background: sprite($icons2,coop3) no-repeat;
+  }
+}
+/*联系我们*/
+.contact-map {
+  height: 500px;
+  border: 1px solid $bdr-color2;
+  overflow: hidden;
+}
+.contact-info{
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+    .left{
+      padding-top: 60px;
+      float: left;
+      width: 72%;
+        address{
+          margin-left: 6%;
+          padding-left: 40px;
+          margin-bottom: 10px;
+          height: 24px;
+          font-size: 22px;
+          font-size: 2.2rem;
+          color: $font-n-color2;
+          line-height: 24px;
+        }
+    }
+  .right{
+    float: right;
+    width: 28%;
+  }
+}
+.contact-icon-phone{
+  background: sprite($icons2,contact1) no-repeat;
+}
+.contact-icon-fax{
+  background: sprite($icons2,contact2) no-repeat;
+}
+.contact-icon-mail{
+  background: sprite($icons2,contact3) no-repeat;
+}
+.contact-icon-address{
+  background: sprite($icons2,contact4) no-repeat;
+}
+.contact-icon-wx{
+  background: sprite($icons2,contact5) no-repeat;
+}
+.wx-box{
+  margin-top: 45px;
+  height: 160px;
+  border-left: 1px solid $bdr-color;
+    span{
+      margin-left: 124px;
+      width: 96px;
+      height: 96px;
+      display: block;
+      background: url(../images/wx-logo.png) 0 0 no-repeat;
+    }
+    p{
+      margin: 10px 0 0 90px;
+      height: 22px;
+      padding-left: 32px;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 22px;
+      color: $font-n-color;
+      background: sprite($icons2,contact6) no-repeat;
     }
 }
