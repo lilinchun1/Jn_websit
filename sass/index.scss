@@ -587,8 +587,8 @@ a{
     display: block;
     font-size: 16px;
     font-size: 1.6rem;
-    text-align: center;
     color: $font-n-color2;
+    text-align: center;
   }
 }
 .cooperation-list-pic-box{
@@ -698,7 +698,7 @@ a{
       width: 96px;
       height: 96px;
       display: block;
-      background: url(../images/wx-logo.png) 0 0 no-repeat;
+      background: url(../images/wx-logo.jpg) 0 0 no-repeat;
     }
     p{
       margin: 10px 0 0 90px;
@@ -777,4 +777,7 @@ a{
       font-size: 1.6rem;
       color: $font-n-color2;
     }
+}
+.about-value{
+  margin-top: 15px;
 }

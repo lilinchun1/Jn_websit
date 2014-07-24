@@ -8,11 +8,12 @@ $(document).ready(function(){
         autoPlayDelay: 3000,
         preloader: true,
         preloadTheseFrames: [1],
-        preloadTheseImages: [
+        /*preloadTheseImages: [
             "images/tn-model1.png",
             "images/tn-model2.png",
-            "images/tn-model3.png"
-        ]
+            "images/tn-model3.png",
+            "images/1.png"
+        ]*/
     };
     
     var mySequence = $("#sequence").sequence(options).data("sequence");

@@ -111,9 +111,9 @@ $sequencePreloader: ".sequence-preloader";
 }
 
 #{$pagination} {
-  bottom: 1%;
+  bottom: 5%;
   display: none;
-  right: 6%;
+  left: 48%;
   position: absolute;
   z-index: 10;
   @include prefixed(transition-duration, .5s);
@@ -121,7 +121,7 @@ $sequencePreloader: ".sequence-preloader";
   li {
     display: inline-block;
     *display: inline; /* Hack for IE7 and below as they don't support inline-block */
-    height: 140px;
+    /*height: 140px;*/
 
     img {
       cursor: pointer;
@@ -143,7 +143,7 @@ $sequencePreloader: ".sequence-preloader";
 }
 
 h2 {
-  color: #333333;
+  color: #fff;
   font-family: "Microsoft Yahei";
   font-weight: bold;
   text-transform: uppercase;
@@ -156,7 +156,7 @@ h3 {
 #{$nextButton},
 #{$prevButton} {
   position: absolute;
-  opacity: 0.6;
+  opacity: 0;
   @include prefixed(transition-duration, 1s);
 }
 
@@ -165,7 +165,14 @@ h3 {
   opacity: 1;
   @include prefixed(transition-duration, 1s);
 }
-
+#sequence{
+    &:hover .sequence-prev{
+      opacity: 0.6;
+    }
+    &:hover .sequence-next{
+      opacity: 0.6;
+    }
+}
 .title {
   font-size: 6em;
   left: 65%;
@@ -412,11 +419,69 @@ and (orientation : landscape) {
   margin-left: 15px;
   padding: 0 5px;
   height: 40px;
-  background: #000000;
-  color: #ffffff;
+  background: #fff;
+  border-radius: 5px;
+  color: #53d4f3;
   font-size: 30px;
   font-size: 3rem;
   font-weight: normal;
   line-height: 40px;
   text-align: center;
   display: inline;}
+
+.slide .sequence-pagination{
+  li{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+
+  }
+  .current{
+    opacity: 0.7;
+  }
+}
+.slide-1-1{
+  width: 404px;
+  height: 119px;
+  background: url(../images/slide1-1.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.slide-1-2{
+  width: 408px;
+  height: 127px;
+  background: url(../images/slide1-2.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.slide-2-1{
+  width: 344px;
+  height: 120px;
+  background: url(../images/slide2-1.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.slide-2-2{
+  width: 258px;
+  height: 157px;
+  background: url(../images/slide2-2.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.model2-position{
+  position: relative;
+  top: 92%;
+}
+.slide .slide-3-1{
+  top: 80%;
+  width: 193px;
+  height: 177px;
+  background: url(../images/slide3-1.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.slide .slide-3-2{
+  width: 240px;
+  height: 111px;
+  background: url(../images/slide3-2.png) 0 0 no-repeat;
+  text-indent: -999em;
+  left: 68%;
+  top: 90%;
+}
