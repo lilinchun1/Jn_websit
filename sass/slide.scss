@@ -436,10 +436,11 @@ and (orientation : landscape) {
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
+    opacity: 0.7;
 
   }
   .current{
-    opacity: 0.7;
+    opacity: 1;
   }
 }
 .slide-1-1{
@@ -484,4 +485,27 @@ and (orientation : landscape) {
   text-indent: -999em;
   left: 68%;
   top: 90%;
+}
+.model3-position {
+  position: relative;
+  top: 92%;
+}
+.slide .slide-4-1{
+  top: 80%;
+  width: 136px;
+  height: 177px;
+  background: url(../images/slide4-1.png) 0 0 no-repeat;
+  text-indent: -999em;
+}
+.slide .slide-4-2{
+  width: 272px;
+  height: 71px;
+  background: url(../images/slide4-2.png) 0 0 no-repeat;
+  text-indent: -999em;
+  left: 68%;
+  top: 90%;
+}
+.model4-position {
+  position: relative;
+
 }
