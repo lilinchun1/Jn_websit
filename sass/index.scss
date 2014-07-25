@@ -27,11 +27,10 @@ $tw-block-span-wh:88px; //首页3个橙色块的宽高
   width: 96%;
   overflow: hidden;
 }
-/*@import "icons*//*.png";*/
-$icons:sprite-map("icons/*.png");
+
+@import "icons/*.png";
 $icons2-spacing:20px;
-/*@import "icons2*//*.png";*/
-$icons2:sprite-map("icons2/*.png", $spacing:20px);
+@import "icons2/*.png";
 
 %trans{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-out 0s;-ms-transition: all .3s ease-in-out 0s; -o-transition: all .3s ease-in-out 0s;transition: all .3s ease-in-out 0s;}//通用transition
 
@@ -59,7 +58,7 @@ a{
   height: 42px;
   overflow: hidden;
   text-indent: -999em;
-  background: sprite($icons, head-logo) no-repeat;
+  @include icons-sprite(head-logo);
   a{
     height: 42px;
     display: block;}
@@ -139,7 +138,7 @@ a{
       margin: 82px auto 0 auto;
       width: 860px;
       height: 46px;
-      background: sprite($icons,index-banner-tt) no-repeat;
+      @include icons-sprite(index-banner-tt);
       overflow: hidden;
       text-indent: -999em;
     }
@@ -208,9 +207,18 @@ a{
       background: $n-h-color;
     }
 }
-.icon-hz{ background: $n-color sprite($icons,icon1) no-repeat; }
-.icon-qd{ background: $n-color sprite($icons,icon2) no-repeat; }
-.icon-td{ background: $n-color sprite($icons,icon3) no-repeat; }
+.icon-hz{
+  @include icons-sprite(icon1);
+  background-color: $n-color;
+}
+.icon-qd{
+  @include icons-sprite(icon2);
+  background-color: $n-color;
+}
+.icon-td{
+  @include icons-sprite(icon3);
+  background-color: $n-color;
+}
 
 .foot {
   height: 95px;
@@ -256,7 +264,8 @@ a{
       width: 753px;
       height: 56px;
       display: block;
-      background: sprite($icons,serve-tt) no-repeat;}
+      @include icons-sprite(serve-tt);
+    }
 }
 .serve-section{
   margin: 0 auto;
@@ -279,7 +288,8 @@ a{
       float: right;
       width: 430px;
         h3{
-          background: sprite($icons,serve1) no-repeat;}
+          @include icons-sprite(serve1);
+          }
         }
 }
 .serve-bg2{
@@ -291,7 +301,8 @@ a{
     width: 440px;
     h3{
       height: 42px;
-      background: sprite($icons,serve2) no-repeat;}
+      @include icons-sprite(serve2);
+    }
   }
 }
 .serve-bg3{
@@ -302,7 +313,9 @@ a{
     float: right;
     width: 428px;
     h3{
-      background: sprite($icons,serve3) no-repeat;}
+      @include icons-sprite(serve3);
+
+    }
   }
 }
 .serve-bg4{
@@ -313,7 +326,8 @@ a{
     float: left;
     width: 406px;
     h3{
-      background: sprite($icons,serve4) no-repeat;}
+      @include icons-sprite(serve4);
+    }
   }
 }
 .serve-btn{
@@ -379,7 +393,8 @@ a{
       float: right;
     }
     h2{
-     background: sprite($icons2,twz1) no-repeat;
+      @include icons2-sprite(twz1);
+
     }
 }
 
@@ -393,7 +408,8 @@ a{
       float: left;
     }
     h2{
-      background: sprite($icons2,twz2) no-repeat;
+      @include icons2-sprite(twz2);
+
     }
 }
 .product-item3{
@@ -406,7 +422,8 @@ a{
     float: right;
   }
   h2{
-    background: sprite($icons2,twz3) no-repeat;
+    @include icons2-sprite(twz3);
+
   }
 }
 /*关于我们*/
@@ -423,7 +440,8 @@ a{
   @extend %w96p;
     h2 {
       @extend %about-tt;
-      background: sprite($icons2,about-tt1) no-repeat;
+      @include icons2-sprite(about-tt1);
+
     }
   p{
     margin-top: 20px;
@@ -438,7 +456,7 @@ a{
   @extend %w96p;
   h2 {
     @extend %about-tt;
-    background: sprite($icons2,about-tt2) no-repeat;
+    @include icons2-sprite(about-tt2);
 
   }
   .about-team-list{
@@ -493,7 +511,8 @@ a{
   @extend %w96p;
   h2 {
     @extend %about-tt;
-    background: sprite($icons2,about-tt3) no-repeat;
+    @include icons2-sprite(about-tt3);
+
   }
 }
 .about-subsidiary-list{
@@ -535,10 +554,12 @@ a{
   padding-left: 26px;
 }
 .cp-phone{
-  background: sprite($icons2,phone)  no-repeat;
+  @include icons2-sprite(phone);
+
 }
 .cp-address{
-  background: sprite($icons2,address)  no-repeat;}
+  @include icons2-sprite(address);
+}
 
 /*合作伙伴*/
 .cooperation-wrap{
@@ -552,7 +573,8 @@ a{
     width: 378px;
     height: 36px;
     text-indent: -999em;
-    background: sprite($icons2,coop1) no-repeat;
+    @include icons2-sprite(coop1);
+
   }
 }
 .cooperation-bk{
@@ -560,7 +582,7 @@ a{
   @extend %w96p;
     h2{
       @extend %about-tt;
-      background: sprite($icons2,coop2) no-repeat;
+      @include icons2-sprite(coop2);
     }
 }
 .cooperation-list{
@@ -641,7 +663,8 @@ a{
 .cooperation-bk2{
   h2{
     @extend %about-tt;
-    background: sprite($icons2,coop3) no-repeat;
+    @include icons2-sprite(coop3);
+
   }
 }
 /*联系我们*/
@@ -675,19 +698,24 @@ a{
   }
 }
 .contact-icon-phone{
-  background: sprite($icons2,contact1) no-repeat;
+  @include icons2-sprite(contact1);
+
 }
 .contact-icon-fax{
-  background: sprite($icons2,contact2) no-repeat;
+  @include icons2-sprite(contact2);
+
 }
 .contact-icon-mail{
-  background: sprite($icons2,contact3) no-repeat;
+  @include icons2-sprite(contact3);
+
 }
 .contact-icon-address{
-  background: sprite($icons2,contact4) no-repeat;
+  @include icons2-sprite(contact4);
+
 }
 .contact-icon-wx{
-  background: sprite($icons2,contact5) no-repeat;
+  @include icons2-sprite(contact5);
+
 }
 .wx-box{
   margin-top: 45px;
@@ -698,7 +726,8 @@ a{
       width: 96px;
       height: 96px;
       display: block;
-      background: url(../images/wx-logo.jpg) 0 0 no-repeat;
+      img{
+        width: 100px;}
     }
     p{
       margin: 10px 0 0 90px;
@@ -708,7 +737,8 @@ a{
       font-size: 2rem;
       line-height: 22px;
       color: $font-n-color;
-      background: sprite($icons2,contact6) no-repeat;
+      @include icons2-sprite(contact6);
+
     }
 }
 

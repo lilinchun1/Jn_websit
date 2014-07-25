@@ -136,6 +136,26 @@
 </div>
 <script src="js/jquery-min.js"></script>
 <script src="js/jquery.sequence-min.js"></script>
-<script src="js/sequencejs-options.modern-slide-in.js"></script>
+<script>
+    $(document).ready(function(){
+        var options = {
+            nextButton: true,
+            prevButton: true,
+            pagination: true,
+            animateStartingFrameIn: true,
+            autoPlay: true,
+            autoPlayDelay: 3000,
+            preloader: true,
+            preloadTheseFrames: [1]
+            /*preloadTheseImages: [
+             "images/tn-model1.png",
+             "images/tn-model2.png",
+             "images/tn-model3.png",
+             "images/1.png"
+             ]*/
+        };
+        var mySequence = $("#sequence").sequence(options).data("sequence");
+    });
+</script>
 </body>
 </html>
