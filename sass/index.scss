@@ -254,6 +254,15 @@ a{
 .serve-warp{
   @extend %wrap;
 }
+.server-list{
+  overflow: hidden;
+    li{
+      height: 760px;
+        &:nth-child(2n-1){
+          background: #ffffff;
+        }
+    }
+}
 .serve-tt{
   margin: 0 auto;
   @extend %w96p;
@@ -269,6 +278,7 @@ a{
 }
 .serve-section{
   margin: 0 auto;
+  height: 760px;
   @extend %w96p;
     h3{
       text-indent: -999em;
@@ -281,8 +291,7 @@ a{
     }
 }
 .serve-bg1{
-  height: 600px;
-  background: url(../images/1.png) 100px 36px no-repeat;
+  background: url(../images/1.png) 12% center no-repeat;
     article{
       margin: 22% 10% 0 0;
       float: right;
@@ -293,7 +302,7 @@ a{
         }
 }
 .serve-bg2{
-  height: 770px;
+
   background: url(../images/2.png) center no-repeat;
   article{
     margin: 8% 0 0 10%;
@@ -306,8 +315,8 @@ a{
   }
 }
 .serve-bg3{
-  height: 600px;
-  background: url(../images/3.png) left center no-repeat;
+
+  background: url(../images/3.png) 20% center no-repeat;
   article{
     margin: 22% 10% 0 0;
     float: right;
@@ -319,14 +328,35 @@ a{
   }
 }
 .serve-bg4{
-  height: 400px;
-  background: url(../images/4.png) right no-repeat;
+  background: url(../images/4.png) 90% center no-repeat;
   article{
-    margin: 8% 0 0 10%;
+    margin: 30% 0 0 10%;
     float: left;
     width: 406px;
     h3{
       @include icons-sprite(serve4);
+    }
+  }
+}
+.serve-bg5{
+  background: url(../images/slide4.png) 20% center no-repeat;
+  article{
+    margin: 27% 10% 0 0;
+    float: right;
+    width: 406px;
+    h3{
+      @include icons-sprite(serve5);
+    }
+  }
+}
+.serve-bg6{
+  background: url(../images/6.png) 90% center no-repeat;
+  article{
+    margin: 30% 0 0 10%;
+    float: left;
+    width: 406px;
+    h3{
+      @include icons-sprite(serve6);
     }
   }
 }

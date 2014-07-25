@@ -55,7 +55,7 @@ $sequencePreloader: ".sequence-preloader";
       top: -50%;
 
       img {
-        height: 96%;
+        //height: 96%;
       }
     }
 
@@ -220,11 +220,11 @@ h3 {
   bottom: -48%;
   opacity: 0;
   position: relative;
-  height: auto !important;
-  max-height: 568px !important;
-  width: 30%;
-  min-width: 225px; /* prevents the model from shrinking when the browser is resized */
-  max-width: 266px;
+  //height: auto !important;
+  //max-height: 568px !important;
+  //width: 30%;
+  //min-width: 225px; /* prevents the model from shrinking when the browser is resized */
+  //max-width: 266px;
 }
 
 #{$animateIn} .model {
@@ -456,6 +456,7 @@ and (orientation : landscape) {
   text-indent: -999em;
 }
 .slide-2-1{
+  top: 75%;
   width: 344px;
   height: 120px;
   background: url(../images/slide2-1.png) 0 0 no-repeat;
@@ -467,9 +468,15 @@ and (orientation : landscape) {
   background: url(../images/slide2-2.png) 0 0 no-repeat;
   text-indent: -999em;
 }
+.animate-in .slide-2-1,.animate-in .slide-2-2{
+  left: 46%;
+}
 .model2-position{
   position: relative;
-  top: 92%;
+  top: 48%;
+}
+.animate-in .model2-position{
+  left: 0%;
 }
 .slide .slide-3-1{
   top: 80%;
@@ -479,33 +486,42 @@ and (orientation : landscape) {
   text-indent: -999em;
 }
 .slide .slide-3-2{
-  width: 240px;
-  height: 111px;
+  width: 376px;
+  height: 97px;
   background: url(../images/slide3-2.png) 0 0 no-repeat;
   text-indent: -999em;
-  left: 68%;
-  top: 90%;
+
 }
 .model3-position {
   position: relative;
-  top: 92%;
+  top: 62%;
 }
-.slide .slide-4-1{
-  top: 80%;
+.animate-in .slide-4-1{
+  top: 90%;
+  left: 60%;
   width: 136px;
   height: 177px;
   background: url(../images/slide4-1.png) 0 0 no-repeat;
-  text-indent: -999em;
+
 }
-.slide .slide-4-2{
+.slide-4-2, .slide-4-1{
+  text-indent: -9999em;
+}
+.animate-in .slide-4-2{
+  top: 112%;
+  left: 60%;
   width: 272px;
   height: 71px;
   background: url(../images/slide4-2.png) 0 0 no-repeat;
-  text-indent: -999em;
-  left: 68%;
-  top: 90%;
-}
-.model4-position {
-  position: relative;
 
+
+}
+
+.slide .model4-position {
+  position: relative;
+  top: 70%;
+}
+.slide .model1-position{
+  position: relative;
+  top: 54%;
 }
