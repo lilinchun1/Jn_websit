@@ -469,12 +469,14 @@ a{
   margin: 95px auto 0 auto;
   @extend %w96p;
     h2 {
+      margin-bottom: 15px;
       @extend %about-tt;
       @include icons2-sprite(about-tt1);
 
     }
   p{
-    margin-top: 20px;
+    text-indent: 2em;
+    margin-top: 5px;
     font-size: 16px;
     font-size: 1.6rem;
     color: $font-n-color2;
@@ -623,6 +625,7 @@ a{
       float: left;
       width: 316px;
       height: 306px;
+      border-radius: 5px;
     }
 
   img{
@@ -694,7 +697,12 @@ a{
   h2{
     @extend %about-tt;
     @include icons2-sprite(coop3);
-
+  }
+}
+.cooperation-bk3{
+  h2{
+    @extend %about-tt;
+    @include icons2-sprite(coop4);
   }
 }
 /*联系我们*/
@@ -744,8 +752,10 @@ a{
 
 }
 .contact-icon-wx{
-  @include icons2-sprite(contact5);
-
+  @include icons2-sprite(contact7);
+  a{
+    color: $font-n-color2;
+  }
 }
 .wx-box{
   margin-top: 45px;
@@ -840,4 +850,8 @@ a{
 }
 .about-value{
   margin-top: 15px;
+    h2{
+      margin-bottom: 15px;
+      @include icons2-sprite(about-tt4);
+    }
 }

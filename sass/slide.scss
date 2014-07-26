@@ -167,10 +167,10 @@ h3 {
 }
 #sequence{
     &:hover .sequence-prev{
-      opacity: 0.6;
+      opacity: 1;
     }
     &:hover .sequence-next{
-      opacity: 0.6;
+      opacity: 1;
     }
 }
 .title {
@@ -436,7 +436,7 @@ and (orientation : landscape) {
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.5;
 
   }
   .current{
@@ -455,10 +455,17 @@ and (orientation : landscape) {
   background: url(../images/slide1-2.png) 0 0 no-repeat;
   text-indent: -999em;
 }
+.animate-in .slide-1-1{
+  top: 86%;
+}
+.animate-in .slide-1-2{
+  top: 107%;
+  left: 53.2%;
+}
 .slide-2-1{
   top: 75%;
-  width: 344px;
-  height: 120px;
+  width: 368px;
+  height: 139px;
   background: url(../images/slide2-1.png) 0 0 no-repeat;
   text-indent: -999em;
 }
@@ -468,9 +475,12 @@ and (orientation : landscape) {
   background: url(../images/slide2-2.png) 0 0 no-repeat;
   text-indent: -999em;
 }
-.animate-in .slide-2-1,.animate-in .slide-2-2{
+.animate-in .slide-2-1{
   left: 46%;
 }
+.animate-in .slide-2-2{
+  left: 51.7%;
+ }
 .model2-position{
   position: relative;
   top: 48%;
@@ -492,6 +502,10 @@ and (orientation : landscape) {
   text-indent: -999em;
 
 }
+.animate-in .slide-3-2{
+  left: 50.8%;
+  top: 98%;
+}
 .model3-position {
   position: relative;
   top: 62%;
@@ -499,8 +513,8 @@ and (orientation : landscape) {
 .animate-in .slide-4-1{
   top: 90%;
   left: 60%;
-  width: 136px;
-  height: 177px;
+  width: 298px;
+  height: 96px;
   background: url(../images/slide4-1.png) 0 0 no-repeat;
 
 }
