@@ -392,6 +392,7 @@ a{
 }
 .product-list{
     li{
+      position: relative;
       padding: 0 8%;
       background-color: #f6f6f6;
       height: 500px;
@@ -455,6 +456,24 @@ a{
     @include icons2-sprite(twz3);
 
   }
+}
+.bubble{
+  position: absolute;
+  border-radius: 50%;
+}
+.bubble1 {
+  width: 106px;
+  height: 106px;
+  background-image: linear-gradient(180deg,#72dfff,#61c1f1);
+}
+.bubble2 {
+  top: 100px;
+  left: 200px;
+  width: 348px;
+  height: 348px;
+ background: repeating-linear-gradient(180deg,#fff,#fff 44px, #3f94ff 45px);
+background-size: 100% 45px;
+  border-radius: 5px;
 }
 /*关于我们*/
 .about-banner{
