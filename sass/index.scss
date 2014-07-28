@@ -50,7 +50,7 @@ a{
 
 .head{
   height: 120px;
-  border-bottom: 1px solid $bdr-color2;
+ /* border-bottom: 1px solid $bdr-color2;*/
   overflow: hidden;}
 .logo{
   float: left;
@@ -244,7 +244,7 @@ a{
       color: #ffffff;}
 }
 .foot-nav{
-  margin: 30px 90px 0 0;
+  margin: 30px 25px 0 0;
   float: right;
   text-align: center;
     li{
@@ -434,6 +434,7 @@ a{
   background-repeat: no-repeat;
   background-position: 8% center;
     article{
+      margin-right: -10%;
       margin-top: 10%;
       float: right;
     }
@@ -462,7 +463,8 @@ a{
   background-repeat: no-repeat;
   background-position: 8% center;
   article{
-    margin-top: 10%;
+    margin-right: -5%;
+    margin-top: 14%;
     width: 680px;
     float: right;
   }
@@ -757,8 +759,8 @@ background-size: 100% 45px;
           padding-left: 40px;
           margin-bottom: 10px;
           height: 24px;
-          font-size: 22px;
-          font-size: 2.2rem;
+          font-size: 16px;
+          font-size: 1.6rem;
           color: $font-n-color2;
           line-height: 24px;
         }
@@ -808,11 +810,11 @@ background-size: 100% 45px;
         width: 100px;}
     }
     p{
-      margin: 10px 0 0 90px;
+      margin: 10px 0 0 105px;
       height: 22px;
       padding-left: 32px;
-      font-size: 20px;
-      font-size: 2rem;
+      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 22px;
       color: $font-n-color;
       @include icons2-sprite(contact6);
