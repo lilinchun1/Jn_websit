@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @import "rest";
 
-$font-n-color:#666;     //文字默认颜色
+$font-n-color:#919da4;     //文字默认颜色666
 $font-n-color2:#919da4; //文字默认颜色 浅色
 $font-h-color:#346eb4; //文字划过颜色
-$n-color:#e74c3c;       //主题颜色
+$n-color:#0cb4e3;       //主题颜色
 $n-h-color:#545d62;     //主题hover颜色
 $bdr-color:#ececec;     //边框颜色
 $bdr-color2:#a5a2a2;     //边框颜色2
 $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
-$tw-block-span-wh:88px; //首页3个橙色块的宽高
+$tw-block-span-wh:96px; //首页3个橙色块的宽高
 //关于页标题
 %about-tt{
   height: 40px;
@@ -36,7 +36,7 @@ $icons2-spacing:20px;
 
 body {
   color: $font-n-color;
-  background: #313131;
+  background: #f9f9f9;
 }
 a{
   color: $font-n-color;
@@ -54,8 +54,8 @@ a{
 .logo{
   float: left;
   margin: 40px 0 0 32px;
-  width: 207px;
-  height: 42px;
+  width: 235px;
+  height: 46px;
   overflow: hidden;
   text-indent: -999em;
   @include icons-sprite(head-logo);
@@ -80,7 +80,7 @@ a{
       height: 20px;
       line-height: 20px;
       text-align: center;
-      border-right: $nav-li-bdr solid #82898c;
+      border-right: $nav-li-bdr solid transparent;
       @extend %trans;
         &:hover a{
           color: $n-h-color;
@@ -151,7 +151,7 @@ a{
     }
 }
 .tw-item{
-  margin: 54px auto 40px auto;
+  margin: 54px auto 80px auto;
   width: 990px;
   height: 130px;
   overflow: hidden;
@@ -171,11 +171,11 @@ a{
     margin-left: -($tw-block-span-wh /2);
     width: $tw-block-span-wh;
     height: $tw-block-span-wh;
-    border-radius: 5px;
+    border-radius: 50%;
     display: block;
                     }
   b {
-    margin-top: 16px;
+    margin-top: 10px;
     display: block;
     font-size: 18px;
     font-size: 1.8rem;
@@ -209,45 +209,54 @@ a{
 }
 .icon-hz{
   @include icons-sprite(icon1);
-  background-color: $n-color;
+  background-color: #fb5785;
 }
 .icon-qd{
   @include icons-sprite(icon2);
-  background-color: $n-color;
+  background-color: #83ea75;
 }
 .icon-td{
   @include icons-sprite(icon3);
-  background-color: $n-color;
+  background-color: #7dc0ff;
 }
-
+.bgr{
+  background-color: #fb5785;
+}
+.bgg{
+  background-color: #83ea75;
+}
+.bgb{
+  background-color: #7dc0ff;
+}
 .foot {
   height: 95px;
-  background: #1c1f21;
+  background: #bbbbbb;
   overflow: hidden;
     em{
+      margin-bottom: 1px;
+      display: block;
+      text-align: center;
       font-size: 14px;
       font-size: 1.4rem;
-      padding-left: 85px;
-      line-height: 95px;
       color: #ffffff;}
 }
 .foot-nav{
-  padding: 38px 60px 0 0;
-  float: right;
+  margin: 10px auto;
+  text-align: center;
     li{
       margin-right: 30px;
       display: inline;
         a{
           font-size: 14px;
           font-size: 1.4rem;
-          color: #6f6f6f;
+          color: #fff;
           @extend %trans;
           &:hover{
-            color: #ffffff;}
+            color: #616161;}
         }
     }
   .active a{
-    color: #ffffff;}
+    color: #616161;}
 }
 
 /*服务介绍页*/
@@ -494,7 +503,6 @@ background-size: 100% 45px;
 
     }
   p{
-    text-indent: 2em;
     margin-top: 5px;
     font-size: 16px;
     font-size: 1.6rem;
@@ -774,6 +782,11 @@ background-size: 100% 45px;
   @include icons2-sprite(contact7);
   a{
     color: $font-n-color2;
+    text-decoration: underline;
+    @extend %trans;
+      &:hover{
+        color: $font-h-color;
+      }
   }
 }
 .wx-box{
@@ -873,4 +886,7 @@ background-size: 100% 45px;
       margin-bottom: 15px;
       @include icons2-sprite(about-tt4);
     }
+}
+.letter-sp{
+  letter-spacing: 2px;
 }
