@@ -85,9 +85,10 @@ a{
       @extend %trans;
         &:hover a{
           color: $n-color;
-          font-weight: bold;
+          /*font-weight: bold;*/
         }
         a{
+          @extend %trans;
           font-size: 18px;
           font-size: 1.8rem;
         }
