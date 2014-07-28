@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*llclcy 2014 45433256@qq.com*/
 @import "rest";
 
 $font-n-color:#919da4;     //文字默认颜色666
@@ -83,7 +84,7 @@ a{
       border-right: $nav-li-bdr solid transparent;
       @extend %trans;
         &:hover a{
-          color: $n-h-color;
+          color: $n-color;
           font-weight: bold;
         }
         a{
@@ -115,6 +116,7 @@ a{
       }
     }
   .active a{
+    color: $n-color;
     font-weight: bolder;
   }
   .active-line{
@@ -129,7 +131,8 @@ a{
 .slide{
   height: 500px;
   overflow: hidden;
-  border-bottom: 1px solid $bdr-color2;}
+  border-bottom: 1px solid $bdr-color2;
+  *display: none;}
 .banner-tt{
   *margin-bottom: 40px;
   height: 235px;
@@ -276,7 +279,7 @@ a{
   margin: 0 auto;
   @extend %w96p;
   height: 222px;
-  border-bottom: 1px solid $bdr-color;
+ /* border-bottom: 1px solid $bdr-color;*/
     em{
       margin: 94px auto 0 auto;
       width: 753px;
@@ -294,9 +297,10 @@ a{
       height: 45px;
     }
     p{
-      margin-top: 10px;
-      font-size: 16px;
-      font-size: 1.6rem;
+      margin-top: 30px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 34px;
     }
 }
 .serve-bg1{
@@ -441,7 +445,7 @@ a{
 .product-item2{
   background-image: url(../images/bgj.png);
   background-repeat: no-repeat;
-  background-position: right 8% center;
+  background-position: 90% center;
   background-position: right center\9;
     article{
       margin: 12% 0 0 0;
@@ -735,7 +739,7 @@ background-size: 100% 45px;
 /*联系我们*/
 .contact-map {
   height: 500px;
-  border: 1px solid $bdr-color2;
+ /* border: 1px solid $bdr-color2;*/
   overflow: hidden;
 }
 .contact-info{
