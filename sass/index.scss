@@ -28,7 +28,7 @@ $tw-block-span-wh:96px; //首页3个橙色块的宽高
   width: 96%;
   overflow: hidden;
 }
-
+$icons-spacing:10px;
 @import "icons/*.png";
 $icons2-spacing:20px;
 @import "icons2/*.png";
@@ -323,7 +323,7 @@ a{
     float: left;
     width: 440px;
     h3{
-      height: 42px;
+      height: 46px;
       @include icons-sprite(serve2);
     }
   }
