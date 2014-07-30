@@ -133,7 +133,9 @@ a{
   height: 500px;
   overflow: hidden;
   border-bottom: 1px solid $bdr-color2;
-  *display: none;}
+  _display: none;
+}
+
 .banner-tt{
   *margin-bottom: 40px;
   height: 235px;
