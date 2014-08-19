@@ -54,14 +54,14 @@ a{
   overflow: hidden;}
 .logo{
   float: left;
-  margin: 40px 0 0 32px;
+  margin: 28px 0 0 30px;
   width: 300px;
-  height: 46px;
+  height: 63px;
   overflow: hidden;
   text-indent: -999em;
   @include icons-sprite(head-logo);
   a{
-    height: 46px;
+    height: 63px;
     display: block;}
 }
 .nav-main{
@@ -83,15 +83,14 @@ a{
       text-align: center;
       border-right: $nav-li-bdr solid transparent;
       @extend %trans;
-        &:hover a{
+        &:hover > a{
           color: $n-color;
-          font-weight: bold;
         }
         a{
-
           font-size: 18px;
           font-size: 1.8rem;
         }
+
       &:nth-last-child(2){
         border-right: 0 none;}
       &:nth-child(1):hover ~ .active-line{
@@ -118,7 +117,6 @@ a{
     }
   .active a{
     color: $n-color;
-    font-weight: bolder;
   }
   .active-line{
     position: absolute;
@@ -128,7 +126,26 @@ a{
     border-right: 0 none;
     background: $n-color;}
 }
-
+.nav-list{
+  ul{
+    position: absolute;
+    z-index: 999;
+    display: block;
+      li {
+        position: relative;
+        padding: 2px 0;
+        margin-top: 0;
+        float: none;
+        display: block;
+        opacity: 0;
+        height: 0;
+      }
+  }
+}
+.nav-list li:hover > ul > li{
+  height: 20px;
+  opacity: 1;
+}
 .slide{
   height: 500px;
   overflow: hidden;
