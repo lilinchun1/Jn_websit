@@ -158,12 +158,12 @@ a{
 
 .banner-tt{
   *margin-bottom: 40px;
-  height: 235px;
+  height: 150px;
   overflow: hidden;
     h2{
-      margin: 82px auto 0 auto;
-      width: 860px;
-      height: 46px;
+      margin: 30px auto 0 auto;
+      width: 388px;
+      height: 85px;
       @include icons-sprite(index-banner-tt);
       overflow: hidden;
       text-indent: -999em;
@@ -282,7 +282,45 @@ a{
   .active a{
     color: #616161;}
 }
-
+.index-block{
+  height: 250px;
+  overflow: hidden;
+}
+.index-block-item{
+  margin-right: 0.3125%;
+  float: left;
+  width: 33.125%;
+  height: 250px;
+  background: #50f4d3;
+    h3{
+      height: 26px;
+      line-height: 26px;
+      font-size: 24px;
+      font-size: 2.4rem;
+      color: #ffffff;
+      font-weight: normal;
+      text-align: center;
+    }
+    p{
+      margin: 0 24px;
+      text-align: center;
+      font-size: 14px;
+      font-size: 1.4rem;
+      color: #ffffff;
+    }
+}
+.index-block-item2{
+  background: #43dae3;
+}
+.index-block-item3{
+  margin-right: 0;
+  background: #15bee9;
+}
+.slide #seven_lbox{
+  display: none;}
+.index-block-item-icon{
+  height: 166px;
+}
 /*服务介绍页*/
 .serve-warp{
   @extend %wrap;
