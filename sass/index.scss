@@ -302,7 +302,7 @@ a{
       text-align: center;
     }
     p{
-      margin: 0 24px;
+      margin: 10px 24px 0 24px;
       text-align: center;
       font-size: 14px;
       font-size: 1.4rem;
@@ -319,7 +319,26 @@ a{
 .slide #seven_lbox{
   display: none;}
 .index-block-item-icon{
-  height: 166px;
+  position: relative;
+  height: 160px;
+    span{
+      margin: -32px 0 0 -32px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 64px;
+      height: 64px;
+      display: block;
+    }
+}
+.item-icon1{
+  @include icons-sprite(icon1);
+}
+.item-icon2{
+  @include icons-sprite(icon2);
+}
+.item-icon3{
+  @include icons-sprite(icon3);
 }
 /*服务介绍页*/
 .serve-warp{
