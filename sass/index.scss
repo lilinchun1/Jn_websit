@@ -12,6 +12,18 @@ $bdr-color2:#a5a2a2;     //边框颜色2
 $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
 $tw-block-span-wh:96px; //首页3个橙色块的宽高
+%tt-span{
+  float: left;
+  width: 40px;
+  height: 55px;
+  background: #e5e5e5;
+}
+%tt-i{
+  margin-left: 23px;
+  width: 50%;
+  height: 55px;
+  float: left;
+}
 //关于页标题
 %about-tt{
   height: 55px;
@@ -532,8 +544,7 @@ a{
 }
 /*关于我们*/
 .about-banner{
-  height: 503px;
-  border-bottom: 1px solid $bdr-color;
+  height: 435px;
   background: url(../images/banner.jpg) 0 0 no-repeat;
 }
 .about-wrap{
@@ -541,28 +552,40 @@ a{
 }
 .about-pro{
   margin: 95px auto 0 auto;
-  @extend %w96p;
+  overflow: hidden;
     h2 {
       margin-bottom: 15px;
       @extend %about-tt;
-      @include icons2-sprite(about-tt1);
-
+        span{
+          @extend %tt-span;
+        }
+      i{
+        @extend %tt-i;
+        @include icons2-sprite(about-tt1);
+      }
     }
   p{
-    margin-top: 5px;
+    margin: 5px 58px;
     font-size: 16px;
     font-size: 1.6rem;
+    text-indent: 2em;
     color: $font-n-color2;
     line-height: 30px;
   }
 }
 .about-team{
   margin: 50px auto 0 auto;
-  @extend %w96p;
+  overflow: hidden;
   h2 {
+    margin-bottom: 15px;
     @extend %about-tt;
-    @include icons2-sprite(about-tt2);
-
+    span{
+      @extend %tt-span;
+    }
+    i{
+      @extend %tt-i;
+      @include icons2-sprite(about-tt2);
+    }
   }
   .about-team-list{
     padding-top: 22px;
@@ -591,26 +614,7 @@ a{
     width: 100%;
   }
 }
-.about-team-info{
-  position: absolute;
-  top: 222px;
-  padding: 14px;
-  width: 218px;
-  height: 292px;
-  background: #ffffff;
-  @extend %trans;
-    h3{
-      font-size: 20px;
-      font-size: 2.0rem;
-    }
-    h4,p{
-      font-size: 14px;
-      font-size: 1.4rem;
-      color: $font-n-color2;
-    }
-  p{
-    margin-top: 5px;}
-}
+
 .about-subsidiary{
   margin: 25px auto 50px auto;
   @extend %w96p;
@@ -679,16 +683,10 @@ a{
     h2{
       @extend %about-tt;
         span {
-          float: left;
-          width: 40px;
-          height: 55px;
-          background: #e5e5e5;
+          @extend %tt-span
         }
       i{
-        margin-left: 23px;
-        width: 50%;
-        height: 55px;
-        float: left;
+        @extend %tt-i;
         @include icons2-sprite(coop3);
       }
     }
