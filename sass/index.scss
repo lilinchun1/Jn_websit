@@ -294,58 +294,57 @@ a{
 .server-list{
   overflow: hidden;
     li{
-      height: 760px;
-        &:nth-child(2n-1){
-          background: #ffffff;
-        }
+      height: 600px;
+        &:nth-of-type(2n+2){
+          background: #f9f9f9;}
     }
 }
 .serve-tt{
   margin: 0 auto;
-  @extend %w96p;
-  height: 222px;
+  overflow: hidden;
+  height: 180px;
+  background: #f9f9f9;
  /* border-bottom: 1px solid $bdr-color;*/
     em{
-      margin: 94px auto 0 auto;
-      width: 753px;
-      height: 56px;
+      margin: 74px auto 0 auto;
+      width: 402px;
+      height: 44px;
       display: block;
       @include icons-sprite(serve-tt);
     }
 }
 .serve-section{
   margin: 0 auto;
-  height: 760px;
-  @extend %w96p;
+  height: 600px;
+  overflow: hidden;
     h3{
       text-indent: -999em;
-      height: 45px;
+      height: 74px;
     }
     p{
-      margin-top: 30px;
+      margin-top: 12px;
       font-size: 18px;
       font-size: 1.8rem;
       line-height: 34px;
     }
 }
 .serve-bg1{
-  background: url(../images/1.png) 12% center no-repeat;
+  background: url(../images/1.png) 115px 115px no-repeat;
     article{
-      margin: 22% 10% 0 0;
+      margin: 224px 150px 0 0;
       float: right;
-      width: 430px;
+      width: 390px;
         h3{
           @include icons-sprite(serve1);
           }
         }
 }
 .serve-bg2{
-
   background: url(../images/2.png) center no-repeat;
   article{
     margin: 8% 0 0 10%;
     float: left;
-    width: 440px;
+    width: 378px;
     h3{
       height: 46px;
       @include icons-sprite(serve2);
