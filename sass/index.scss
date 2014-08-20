@@ -340,13 +340,13 @@ a{
         }
 }
 .serve-bg2{
-  background: url(../images/2.png) center no-repeat;
+  background: url(../images/2.png) 682px 110px no-repeat;
   article{
-    margin: 8% 0 0 10%;
+    margin: 240px 0 0 150px;
     float: left;
     width: 378px;
     h3{
-      height: 46px;
+      height: 75px;
       @include icons-sprite(serve2);
     }
   }
