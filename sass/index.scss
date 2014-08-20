@@ -3,7 +3,7 @@
 @import "rest";
 
 $font-n-color:#919da4;     //文字默认颜色666
-$font-n-color2:#919da4; //文字默认颜色 浅色
+$font-n-color2:#a3a3a3; //文字默认颜色 浅色
 $font-h-color:#346eb4; //文字划过颜色
 $n-color:#0cb4e3;       //主题颜色
 $n-h-color:#545d62;     //主题hover颜色
@@ -33,7 +33,7 @@ $tw-block-span-wh:96px; //首页3个橙色块的宽高
 %wrap{
   width: 100%;
   overflow: hidden;
-  background: #f6f6f6;
+  background: #fff;
 }
 %w96p{
   width: 96%;
@@ -588,44 +588,61 @@ a{
     }
   }
   .about-team-list{
+    margin-left: 10.15625%;
     padding-top: 22px;
     overflow: hidden;
       li{
-        margin: 0 30px 30px 30px;
-        position: relative;
+        margin-right: 3.75%;
         float: left;
-        width: 246px;
-        height: 292px;
-        background: #ffffff;
-        border-radius: 5px;
+        width: 224px;
+        height: 338px;
         overflow: hidden;
-        box-shadow: 0 0 7px #f1f1f1;
-        @extend %trans;
-          &:hover .about-team-info{
-            top: 0;
-            border-radius: 5px;
+          span{
+            position: relative;
+            width: 224px;
+            height: 292px;
+            display: block;
+            overflow: hidden;
+              img{
+                width: 100%;}
+              &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                border: 35px solid transparent;
+                border-top: 35px solid #fff;
+                border-left: 35px solid #fff;
+                display: block;
+              }
+              &:before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                border: 40px solid transparent;
+                border-bottom: 40px solid #fff;
+                border-right: 40px solid #fff;
+                display: block;
+              }
+          }
+          p{
+            height: 45px;
+            line-height: 45px;
+            font-size: 2.4rem;
+            font-size: 24px;
+            color: $font-n-color2;
           }
       }
   }
 }
-.about-team-pic{
-  height: 222px;
-  img{
-    width: 100%;
-  }
-}
 
-.about-subsidiary{
-  margin: 25px auto 50px auto;
-  @extend %w96p;
-  h2 {
-    @extend %about-tt;
-    @include icons2-sprite(about-tt3);
 
-  }
-}
 .about-subsidiary-list{
-
     li{
       padding: 30px 0 0 0;
       width: 50%;
@@ -669,7 +686,70 @@ a{
 .cp-address{
   @include icons2-sprite(address);
 }
-
+.about-history{
+  margin-top: 70px;
+  overflow: hidden;
+  h2 {
+    margin-bottom: 15px;
+    @extend %about-tt;
+    span{
+      @extend %tt-span;
+    }
+    i{
+      @extend %tt-i;
+      @include icons2-sprite(about-tt3);
+    }
+  }
+}
+.about-history-big-node{
+  margin: 52px 0 32px 136px;
+  height: 92px;
+  span{
+    float: left;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background-color: #15bee9;
+      i {
+        margin: 24px 0 0 25px;
+        width: 44px;
+        height: 44px;
+        display: block;
+        overflow: hidden;
+        @include icons2-sprite(time-logo);
+      }
+  }
+  p {
+    float: left;
+    margin-left: 20px;
+    height: 92px;
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 92px;
+    color: #15bee9;
+  }
+}
+.about-history-small-node{
+  margin: 0 0 22px 168px;
+  height: 30px;
+    span{
+      float: left;
+      width: 30px;
+      height: 30px;
+      display: block;
+      border-radius: 50%;
+      background-color: #15bee9;
+    }
+    p{
+      margin-left: 28px;
+      float: left;
+      height: 30px;
+      line-height: 30px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: $font-n-color2;
+    }
+}
 /*合作伙伴*/
 .cooperation-wrap{
   @extend %wrap;
