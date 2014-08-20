@@ -397,16 +397,15 @@ a{
 .serve-btn{
   margin: 0 auto;
   @extend %w96p;
-  border-top: 1px solid $bdr-color;
     em{
-      margin: 45px auto 100px auto;
-      width: 354px;
+      margin: 45px auto 30px auto;
+      width: 184px;
       height: 34px;
       line-height: 34px;
       background: $n-color;
       display: block;
       text-align: center;
-      border-radius: 5px;
+      border-radius: 34px;
       @extend %trans;
         &:hover{
           background: $n-h-color;
@@ -889,16 +888,15 @@ a{
 }
 .contact-info{
   width: 100%;
-  height: 280px;
+  height: 205px;
   overflow: hidden;
     .left{
-      padding-top: 60px;
+      padding-top: 30px;
       float: left;
       width: 72%;
         address{
-          margin-left: 6%;
+          margin-left: 8.6%;
           padding-left: 40px;
-          margin-bottom: 10px;
           height: 24px;
           font-size: 16px;
           font-size: 1.6rem;
@@ -939,9 +937,8 @@ a{
   }
 }
 .wx-box{
-  margin-top: 45px;
+  margin-top: 55px;
   height: 160px;
-  border-left: 1px solid $bdr-color;
     span{
       margin-left: 124px;
       width: 96px;
@@ -962,7 +959,42 @@ a{
 
     }
 }
-
+.contact-info-tt{
+  height: 55px;
+  overflow: hidden;
+  h2{
+    height: 55px;
+    text-indent: -9999em;
+    span{
+      @extend %tt-span;
+    }
+    i{
+      @extend %tt-i;
+      @include icons2-sprite(content);
+    }
+  }
+}
+.contact-area{
+  overflow: hidden;
+  .contact-info-tt h2 i{
+    @include icons2-sprite(area);
+  }
+}
+.company-item {
+  float: left;
+  width: 33.3333333%;
+  p{
+    margin-left: 19%;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: $font-n-color2;
+  }
+}
+.content-us-btn {
+  margin: 0 auto;
+  height: 35px;
+  background: #34baff;
+}
 /*列表页*/
 .list-wrap{
   width: 100%;
