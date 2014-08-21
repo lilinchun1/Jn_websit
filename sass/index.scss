@@ -405,19 +405,19 @@ a{
     em{
       padding: 0 20px;
       margin: 45px auto 30px auto;
-      width: 184px;
-      height: 34px;
-      line-height: 34px;
+      width: 280px;
+      height: 50px;
+      line-height: 50px;
       background: $n-color;
       display: block;
       text-align: center;
-      border-radius: 34px;
+      border-radius: 50px;
       @extend %trans;
         &:hover{
           background: $n-h-color;
         }
         a{
-          height: 34px;
+          height: 50px;
           display: block;
           font-size: 18px;
           font-size: 1.8rem;
@@ -444,12 +444,13 @@ a{
     }
 }
 .product-content{
+  position: relative;
   height: 890px;
   background: #fff url(../images/product-bg.png) 184px 138px no-repeat;
   overflow: hidden;
   article{
     float: right;
-    margin: 92px 150px 0 0;
+    margin: 92px 150px 50px 0;
     width: 450px;
     overflow: hidden;
   }
