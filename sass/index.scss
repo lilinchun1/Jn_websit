@@ -353,11 +353,11 @@ a{
 }
 .serve-bg3{
 
-  background: url(../images/3.png) 20% center no-repeat;
+  background: url(../images/3.png) 168px center no-repeat;
   article{
-    margin: 22% 10% 0 0;
+    margin: 220px 150px 0 0;
     float: right;
-    width: 428px;
+    width: 328px;
     h3{
       @include icons-sprite(serve3);
 
@@ -365,20 +365,21 @@ a{
   }
 }
 .serve-bg4{
-  background: url(../images/4.png) 90% center no-repeat;
+  background: url(../images/4.png) 710px 132px no-repeat;
   article{
-    margin: 30% 0 0 10%;
+    margin: 270px 0 0 146px;
     float: left;
-    width: 406px;
+    width: 392px;
     h3{
+      height: 36px;
       @include icons-sprite(serve4);
     }
   }
 }
 .serve-bg5{
-  background: url(../images/slide4.png) 20% center no-repeat;
+  background: url(../images/5.png) 20% center no-repeat;
   article{
-    margin: 27% 10% 0 0;
+    margin: 196px 226px 0 0;
     float: right;
     width: 406px;
     h3{
@@ -387,11 +388,11 @@ a{
   }
 }
 .serve-bg6{
-  background: url(../images/6.png) 90% center no-repeat;
+  background: url(../images/6.png) 692px 186px no-repeat;
   article{
-    margin: 30% 0 0 10%;
+    margin: 212px 0 0 154px;
     float: left;
-    width: 406px;
+    width: 240px;
     h3{
       @include icons-sprite(serve6);
     }
@@ -801,6 +802,9 @@ a{
         @include icons2-sprite(coop3);
       }
     }
+}
+.cooperation-bk2 h2 i{
+  @include icons2-sprite(coop2);
 }
 .cooperation-list{
   padding: 32px 0 48px 0;
