@@ -12,6 +12,7 @@ $bdr-color2:#a5a2a2;     //边框颜色2
 $nav-li-with:100px;   //主导航li宽度
 $nav-li-bdr:2px;      //主导航li边框宽度
 $tw-block-span-wh:96px; //首页3个橙色块的宽高
+$bg-color:#f9f9f9; //背景颜色
 %tt-span{
   float: left;
   width: 40px;
@@ -48,7 +49,7 @@ $icons2-spacing:20px;
 
 body {
   color: $font-n-color;
-  background: #f9f9f9;
+  background: $bg-color;
 }
 a{
   color: $font-n-color;
@@ -195,7 +196,7 @@ a{
 .foot {
   padding-top: 10px;
   height: 78px;
-  background: #f9f9f9;
+  background: $bg-color;
   overflow: hidden;
     p{
       text-align: center;
@@ -296,14 +297,14 @@ a{
     li{
       height: 600px;
         &:nth-of-type(2n+2){
-          background: #f9f9f9;}
+          background: $bg-color;}
     }
 }
 .serve-tt{
   margin: 0 auto;
   overflow: hidden;
   height: 180px;
-  background: #f9f9f9;
+  background: $bg-color;
  /* border-bottom: 1px solid $bdr-color;*/
     em{
       margin: 74px auto 0 auto;
@@ -427,124 +428,50 @@ a{
   width: 100%;
   overflow: hidden;
 }
-.product-list{
-    li{
-      position: relative;
-      z-index: 1;
-      padding: 0 8%;
-      background-color: #f6f6f6;
-      height: 500px;
-        &:nth-child(2n-1){
-          background-color: #ededed;
-        }
-    }
-    article{
-      width: 740px;
+.product-tt{
+  height: 180px;
+  background-color: $bg-color;
+  overflow: hidden;
+    h2{
+      text-indent: -9999em;
+      margin: 70px auto 0 auto;
+      width: 409px;
+      height: 47px;
       overflow: hidden;
-    }
-    h2{
-      height: 32px;
-      text-indent: -999em;
-    }
-    p{
-      margin-top: 10px;
-      color: $font-n-color2;
-      font-size: 18px;
-      font-size: 1.8rem;
+      @include icons-sprite(product-tt);
     }
 }
-.product-item1 {
-  background-image: url(../images/lsj.png);
-  background-repeat: no-repeat;
-  background-position: 8% center;
-    article{
-      margin-right: -10%;
-      margin-top: 10%;
-      float: right;
-    }
-    h2{
-      @include icons2-sprite(twz1);
-
-    }
-}
-
-.product-item2{
-  background-image: url(../images/bgj.png);
-  background-repeat: no-repeat;
-  background-position: 90% center;
-  background-position: right center\9;
-    article{
-      margin: 12% 0 0 0;
-      float: left;
-    }
-    h2{
-      @include icons2-sprite(twz2);
-
-    }
-}
-.product-item3{
-  background-image: url(../images/sjd.png);
-  background-repeat: no-repeat;
-  background-position: 8% center;
+.product-content{
+  height: 890px;
+  background: #ffffff;
+  overflow: hidden;
   article{
-    margin-right: -5%;
-    margin-top: 14%;
-    width: 680px;
     float: right;
+    margin: 92px 150px 0 0;
+    width: 450px;
+    overflow: hidden;
   }
-  h2{
-    @include icons2-sprite(twz3);
-
+  h3{
+    text-indent: -99999em;
+  }
+  p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: $font-n-color2;
+  }
+  .product-content-tt1{
+    height: 36px;
+    @include icons-sprite(product-tt-h1);
+  }
+  .product-content-tt2{
+    margin-top: 85px;
+    height: 155px;
+    @include icons-sprite(product-tt-h2);
   }
 }
-.bubble{
-  position: absolute;
-  border-radius: 50%;
-  color: #ffffff;
-    em{
-      text-align: center;
-      font-size: 14px; font-size: 1.4rem;
-    }
-}
-.bubble1 {
-  width: 106px;
-  height: 106px;
 
-  top: 15px;
-  left: 400px;
-  background-image: linear-gradient(180deg,#72dfff,#61c1f1);
-    &:before{
-      content: '';
-      width: 50%;
-      height: 50%;
-      display: block;
-      background: #000000;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      z-index: -1;
-      background-image: linear-gradient(180deg,#72dfff,#61c1f1);
-      -webkit-transform: skew(-30deg,0deg) translate(-10px,-20px);
-      -moz-transform: skew(-30deg,0deg) translate(-10px,-20px);
-      -ms-transform: skew(-30deg,0deg) translate(-10px,-20px);
-      -o-transform: skew(-30deg,0deg) translate(-10px,-20px);
-      transform: skew(-30deg,0deg) translate(-10px,-20px);
-    }
-}
-.bubble2 {
-  top: 100px;
-  left: 200px;
-  width: 114px;
-  height: 114px;
-  background-image: linear-gradient(180deg, #ff81cc, #ff50b3);
-}
-.bubble3 {
-  top: 300px;
-  left: 200px;
-  width: 88px;
-  height: 88px;
-  background-image: linear-gradient(180deg,#0fa42f,#087c11);
-}
+
 /*关于我们*/
 .about-banner{
   height: 435px;
