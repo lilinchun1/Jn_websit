@@ -8,15 +8,17 @@
 .seven_ios7 .seven_bullet_control #seven_bullet_inner_viewport{ padding:10px;display:inline-block;}
 .seven_ios7 #left_btn{ width:39px;height:39px;background-image:url(../../images/skin/ios7.png);background-position:0% 0%;left:10px;}
 .seven_ios7 #right_btn{ width:39px;height:39px;background-image:url(../../images/skin/ios7.png);background-position:100% 0%;right:10px;}
-.seven_ios7 .seven_hcarousel{margin-top:-60px;bottom:0px;height:56px;z-index:50;}
+.seven_ios7 .seven_hcarousel{margin-top:-50px;bottom:0px;height:56px;z-index:50;}
 .seven_ios7 .seven_hcarousel.seven_bullet{ margin-top:20px !important;}
-.seven_ios7 .seven_hcarousel #seven_hviewport .carousel{width:60px;height:60px;margin:0;background-position:100% 0%;}
+.seven_ios7 .seven_hcarousel #seven_hviewport .carousel{width:30px;height:40px;margin:0;background-position:100% 0%;}
 .seven_ios7 .seven_hcarousel #seven_hviewport .carousel.active{background-position:0% 0%;}
 .seven_ios7 .seven_hcarousel #seven_hviewport .carousel:hover{background-position:0% 0%;}
-.seven_ios7 .seven_hcarousel #seven_hviewport .carousel.active .seven_ci{width:50px;height:50px;margin:2px;border-radius:50px;border:solid 2px;border-color:#fff;border-color:rgba(255,255,255,0.7);}
-.seven_ios7 .seven_hcarousel #seven_hviewport .carousel:hover .seven_ci{width:50px;height:50px;margin:2px;border-radius:50px;border:solid 2px;border-color:#fff;border-color:rgba(255,255,255,0.7);}
-.seven_ios7 .seven_hcarousel #seven_hviewport .seven_ci{width:40px;height:40px;margin:7px;overflow:hidden;border-radius:40px;border:solid 2px;border-color:#fff;border-color:rgba(255,255,255,0.7);}
-.seven_ios7 .seven_hcarousel #seven_hviewport .seven_ci img{width:100%;height:100%;border-radius:50px;}
+.seven_ios7 .seven_hcarousel #seven_hviewport .carousel.active .seven_ci{width:20px;height:20px;border-radius:20px;background:rgba(255,255,255,0.9);}
+.seven_ios7 .seven_hcarousel #seven_hviewport .carousel:hover .seven_ci{width:20px;height:20px;border-radius:20px;background:rgba(255,255,255,0.9);}
+.seven_ios7 .seven_hcarousel #seven_hviewport .seven_ci{width:20px;height:20px;margin:7px;overflow:hidden;border-radius:20px;
+    background: rgba(255,255,255,.3);}
+.seven_ios7 .seven_hcarousel #seven_hviewport .seven_ci img{width:100%;height:100%;border-radius:50px;
+    display: none;}
 .seven_ios7 .seven_circle{width:9px;height:9px;background-image:url(../../images/skin/c_ios7.png); }
 .seven_ios7 .seven_nav{top:50%;margin-top:-18px;}
 .seven_ios7 .seven_a_play{position:absolute;right:0px;bottom:0px;margin:10px 20px;width:18px;height:30px;background-image:url(../../images/skin/p_ios7.png);background-position:100% 0%;z-index:80;}
@@ -42,5 +44,4 @@
 .seven_ios7 .seven_play,.seven_container .seven_pause{width:48px !important;height:48px !important;cursor:pointer;left:auto;right:0px;top:0px;position:absolute;margin:10px;}
 .seven_ios7 #lp_ct.progressbar{top:auto;bottom:0;}
 @font-face { font-family: lucida; src: url('../font/BEBAS.ttf'); } 
-
 
