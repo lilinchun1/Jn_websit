@@ -230,8 +230,8 @@ a{
   float: left;
   width: 33.125%;
   height: 250px;
+  border-radius: 10px;
   background: #50f4d3;
-  @extend %trans;
     &:hover span{
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
@@ -277,6 +277,11 @@ a{
       height: 64px;
       display: block;
       @extend %trans;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
     }
 }
 .item-icon1{
@@ -865,8 +870,8 @@ a{
 .contact-icon-wx{
   @include icons2-sprite(contact7);
   a{
-    color: $font-n-color2;
-    text-decoration: underline;
+    color: $n-color;
+    text-decoration: none;
     @extend %trans;
       &:hover{
         color: $font-h-color;
