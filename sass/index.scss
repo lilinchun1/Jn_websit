@@ -403,6 +403,7 @@ a{
   margin: 0 auto;
   @extend %w96p;
     em{
+      padding: 0 20px;
       margin: 45px auto 30px auto;
       width: 184px;
       height: 34px;
@@ -416,6 +417,7 @@ a{
           background: $n-h-color;
         }
         a{
+          height: 34px;
           display: block;
           font-size: 18px;
           font-size: 1.8rem;
@@ -443,7 +445,7 @@ a{
 }
 .product-content{
   height: 890px;
-  background: #ffffff;
+  background: #fff url(../images/product-bg.png) 184px 138px no-repeat;
   overflow: hidden;
   article{
     float: right;
