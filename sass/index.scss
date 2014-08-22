@@ -224,6 +224,7 @@ a{
     color: #616161;}
 }
 .index-block{
+  margin-bottom: 10px;
   height: 250px;
   overflow: hidden;
 }
@@ -359,6 +360,34 @@ a{
 }
 .v3-banner-tt{
   background: url(../images/slider-shadow.jpg) 0 0 no-repeat;
+}
+.v4-index-block{
+  margin-top: 40px;
+  .index-block-item{
+      position: relative;
+      background-color: transparent;
+      .index-block-item-icon{
+        position: relative;
+        left: 50%;
+        margin-left: -52px;
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        background-color: #c1c1c1;
+        @extend %trans;
+          span{
+            border-radius: 50%;
+          }
+      }
+      h3,p{
+        color: #a3a3a3;
+      }
+      h3{
+        margin-top: 25px;}
+    &:hover .index-block-item-icon{
+      background-color: #15bee9;
+    }
+  }
 }
 /*服务介绍页*/
 .serve-warp{
@@ -848,10 +877,10 @@ a{
     img{
       width: 100%;}
       &:hover .pic-box-btn{
-        //opacity: 1;
+        opacity: 1;
       }
       &:hover .pic-box-btn-icon{
-        //left: 50%;
+        left: 50%;
       }
 }
 .pic-box-btn {
