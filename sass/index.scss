@@ -296,7 +296,7 @@ a{
   @include icons-sprite(icon3);
 }
 .index-block-v2{
-  margin: 0 60px;
+  margin: 0 60px 65px 60px;
   height: 156px;
   overflow: hidden;
 }
@@ -356,6 +356,9 @@ a{
 }
 .index2-slide{
   height: 500px;
+}
+.v3-banner-tt{
+  background: url(../images/slider-shadow.jpg) 0 0 no-repeat;
 }
 /*服务介绍页*/
 .serve-warp{
@@ -845,10 +848,10 @@ a{
     img{
       width: 100%;}
       &:hover .pic-box-btn{
-        opacity: 1;
+        //opacity: 1;
       }
       &:hover .pic-box-btn-icon{
-        left: 50%;
+        //left: 50%;
       }
 }
 .pic-box-btn {
