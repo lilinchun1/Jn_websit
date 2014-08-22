@@ -483,7 +483,7 @@ a{
       border-radius: 50px;
       @extend %trans;
         &:hover{
-          background: $n-h-color;
+          opacity: .8;
         }
         a{
           height: 50px;
