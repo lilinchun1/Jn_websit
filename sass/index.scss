@@ -127,7 +127,7 @@ a{
         left: ($nav-li-with + $nav-li-bdr) * 6;
       }
     }
-  .active a{
+  .active > a{
     color: $n-color;
   }
   .active-line{
@@ -526,6 +526,9 @@ a{
         }
     }
 }
+.no-cus{
+  cursor: default;
+}
 /*产品介绍*/
 .product-wrap{
   width: 100%;
@@ -830,7 +833,7 @@ a{
   opacity: 0;
   background-color: rgba(0,0,0,0.4);
     .team-info{
-      margin: 36px 28px 0 28px;
+      margin: 30px 28px 0 28px;
       font-size: 14px;
       font-size: 1.4rem;
       color: #ffffff;
