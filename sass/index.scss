@@ -172,6 +172,7 @@ a{
 .slide{
   height: 435px;
   overflow: hidden;
+  _display: none;
 }
 
 .banner-tt{
@@ -310,7 +311,7 @@ a{
   background: #ff8106;
   border-radius: 30px;
   overflow: hidden;
-
+  _margin-right: 140px;
   &:hover .v2-item-mv{
     top: -130px;
   }
