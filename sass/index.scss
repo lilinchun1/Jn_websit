@@ -472,10 +472,10 @@ a{
     }
 }
 .serve-bg1{
-  background: url(../images/1.png) 115px 115px no-repeat;
+  background: url(../images/1.png) 700px 50px no-repeat;
     article{
-      margin: 224px 150px 0 0;
-      float: right;
+      margin: 220px 0 0 150px;
+      float: left;
       width: 390px;
         h3{
           @include icons-sprite(serve1);
@@ -483,9 +483,9 @@ a{
         }
 }
 .serve-bg2{
-  background: url(../images/2.png) 682px 110px no-repeat;
+  background: url(../images/2.png) 150px 110px no-repeat;
   article{
-    margin: 240px 0 0 150px;
+    margin: 240px 0 0 750px;
     float: left;
     width: 378px;
     h3{
@@ -531,7 +531,7 @@ a{
   }
 }
 .serve-bg6{
-  background: url(../images/6.png) 692px 186px no-repeat;
+  background: url(../images/6.png) 708px 74px no-repeat;
   article{
     margin: 212px 0 0 154px;
     float: left;
