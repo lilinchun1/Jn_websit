@@ -590,8 +590,8 @@ a{
 }
 .product-content{
   position: relative;
-  height: 890px;
-  background: #fff url(../images/product-bg.png) 184px 138px no-repeat;
+  //height: 890px;
+  background: #fff url(../images/product-bg.png) 92px 120px no-repeat;
   overflow: hidden;
   article{
     float: right;
@@ -616,6 +616,12 @@ a{
     margin-top: 85px;
     height: 155px;
     @include icons-sprite(product-tt-h2);
+  }
+  .product-content-tt3{
+    margin-top: 170px;
+    margin-bottom: 80px;
+    height: 74px;
+    @include icons-sprite(product-tt-h3);
   }
 }
 
